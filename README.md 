@@ -1,13 +1,13 @@
 # BeMoreSmart
 
-BeMoreSmart is a curated language learning resource library built for long-term study. It provides an easy-to-navigate catalog of resources across multiple languages, with features like bookmarks, search filters, dark mode, and saved progress.
+BeMoreSmart is a curated learning resource library built for long-term study. It provides an easy-to-navigate catalog of resources across multiple subjects, with features like bookmarks, search filters, dark mode, and saved progress.
 
 ---
 
 ## 🚀 Features
 
-- **Language resource library** with sections for multiple languages
-- **Topic bookmarks** (save whole language sections)
+- **learning resource library** 
+- **Topic bookmarks** 
 - **Individual resource saving** (save specific links)
 - **Search + filter system** for quick navigation
 - **Dark mode toggle** with saved preferences
@@ -19,7 +19,7 @@ BeMoreSmart is a curated language learning resource library built for long-term 
 
 ## 🧠 Why this exists
 
-BeMoreSmart is designed to be a simple, fast, and effective reference tool for language learners. Instead of searching through multiple sites, this library gives you a clean, structured hub of the best learning content in one place.
+BeMoreSmart is designed to be a simple, fast, and effective reference tool for learners. Instead of searching through multiple sites, this library gives you a clean, structured hub of the best learning content in one place.
 
 ---
 
