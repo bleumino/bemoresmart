@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bemoresmart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-left">
+    <h1 class="site-title">bemoresmart</h1>
+  </div>
+
+  <div class="header-right">
+
+    <label class="search-wrap" for="siteSearch">
+      <span class="search-icon" aria-hidden="true">🔍</span>
+      <input id="siteSearch" type="search" placeholder="Search topics, resources..." aria-label="Search the site">
+    </label>
+
+       <div class="filters">
+  <select id="filterCourse">
+    <option value="all">All Courses</option>
+  </select>
+
+  <select id="filterType">
+    <option value="all">All Types</option>
+    <option value="YouTube">YouTube</option>
+    <option value="Course">Course</option>
+    <option value="Book">Book</option>
+    <option value="Podcast">Podcast</option>
+    <option value="Website">Website</option>
+  </select>
+</div>
+
+
+    <button id="themeToggle" aria-label="Toggle dark mode">🌙 Dark mode</button>
+    <button id="randomArticle" type="button" aria-label="Random article">
+      Random Resource
+    </button>
+  </div>
+</header>
+  <section class="intro">
+    <p><strong>bemoresmart</strong> is a curated encyclopaedia of high‑quality learning resources across technology, languages, science, and culture. 
+    The goal of the site is simple: provide structured, trustworthy pathways for self‑education, inspired by the clarity and neutrality of Wikipedia.</p>
+    </section>
+
+    <aside id="bookmarkPanel" class="bookmark-panel" aria-live="polite"></aside>
+
+  <main>
+    <nav class="toc toc-sticky" id="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#web-dev">Web Development</a></li>
+        <li><a href="#data-ml">Data & Intelligent Systems</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#cs-fundamentals">Computer Science Fundamentals</a></li>
+        <li><a href="#mathematics">Mathematics</a></li>
+        <li><a href="#world-society">World & Society</a></li>
+        <li><a href="#arts-culture">Arts & Culture</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#life-skills">Life Skills</a></li>
+        <li><a href="#arts-creativity">Arts & Creativity</a></li>
+        <li><a href="#fitness-wellbeing">Fitness and wellbeing</a></li>
+      </ol>
+    </nav>
+
+    <div class="main-content" id="coursesContainer">
+
+        <button id="backToTop">↑ Top</button>
+
+      <article class="course" id="web-dev" data-course-name="Web Development">
+        <h2>Web Development (Front-End, Back-End, Full-Stack)</h2>
+        <section class="topic" id="html-css" data-topic-name="HTML & CSS">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="html-css-resources">▼</button>
+          <h3 style="display:inline">HTML &amp; CSS</h3>
+          <ul class="resources" id="html-css-resources">
+            <li><a href="https://www.w3schools.com/html/" target="_blank">w3schools HTML</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank">w3schools CSS</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLjwm_8O3suyOwElnplQ3quKEHsOuHyP9R&si=0sFrizSOMycXpag6" target="_blank">HTML &amp; CSS Website Design Tutorials – GreatStack</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLZPZq0r_RZOONc3kkuRmBOlj67YAG6jqo&si=KSYKvY4j8ymim95k" target="_blank">CSS Tutorial for Beginners – Bro Code</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="javascript" data-topic-name="JavaScript">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="javascript-resources">▼</button>
+          <h3 style="display:inline">JavaScript</h3>
+          <ul class="resources" id="javascript-resources">
+            <li><a href="https://youtube.com/playlist?list=PLRD1Niz0lz1sdjsiBsYN6nT1aJQTWvF-a&si=7m3aE8DrfMokGhPu" target="_blank">Asynchronous JavaScript – Code with Ania Kubów</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://start.lewagon.com/courses/launch-your-side-project-with-javascript" target="_blank">Launch Your Side Project with JavaScript – Le Wagon</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLRD1Niz0lz1uR4W3ms6DygWMjXW-6hDB_&si=il6R-Xkx_R3wmWlB" target="_blank">JavaScript Game Walkthroughs – Code with Ania Kubów</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv" target="_blank">JavaScript Tutorial for Beginners – Bro Code</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V&si=R2bY430-qu80Vs_d" target="_blank">JavaScript Tutorials – freeCodeCamp</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLFzsFUO-y0HCm0FMWSXFDVpKdM-2xqe0q" target="_blank">Learning to Code: JavaScript – Codecademy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLFzsFUO-y0HBN4XSfV9JosFZixuTPX0HC" target="_blank">Creative Coding with p5.js – Codecademy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY" target="_blank">Node.js Tutorial - Codevolution</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLYElE_rzEw_uryBrrzu2E626MY4zoXvx2" target="_blank">JavaScript Game Development Masterclass 2022 - Franks laboratory</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="sql" data-topic-name="SQL">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="sql-resources">▼</button>
+          <h3 style="display:inline">SQL &amp; Databases</h3>
+          <ul class="resources" id="sql-resources">
+            <li><a href="https://youtube.com/playlist?list=PLjgj6kdf_snaENNpsjEBLBn1pjqEPC9JF&si=F6qa7EBsOUMzDvP0" target="_blank">SQL for Data Science – DataCamp</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.codecademy.com/enrolled/courses/learn-sql" target="_blank">Learn SQL – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/learn-sql-multiple-tables" target="_blank">Learn SQL: Multiple Tables – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/enrolled/courses/learn-sql-aggregate-functions" target="_blank">Learn SQL: Aggregate Functions – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLhQjrBD2T382v1MBjNOhPu9SiJ1fsD4C0&si=wvvh5JhwFlmN7JbG" target="_blank">CS50’s Introduction to Databases with SQL – Harvard</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtu.be/VyzKDc2GyW4?si=-4--iSPkiEItckhD" target="_blank">Database Normalization – Cathie Wilson</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLBlnK6fEyqRiyryTrbKHX1Sh9luYI0dhX&si=ZJ2J_t75IoenaThk" target="_blank">Database Management Systems – Neso Academy</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="web-other" data-topic-name="Other">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="web-other-resources">▼</button>
+          <h3 style="display:inline">Other &amp; Career Paths</h3>
+          <ul class="resources" id="web-other-resources">
+            <li><a href="https://app.milanote.com/1Hdwhe1GsYO56q/front-end-development-resources" target="_blank">Front-End Development Resources – Khris Sheer</a> <span class="resource-badge">List</span></li>
+            <li><a href="https://www.codecademy.com/learn/paths/front-end-engineer-career-path" target="_blank">Front-End Engineer Career Path – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/paths/back-end-engineer-career-path" target="_blank">Back-End Engineer Career Path – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/paths/full-stack-engineer-career-path" target="_blank">Full-Stack Engineer Career Path – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer" target="_blank">Meta Front-End Developer Certificate – Coursera</a> <span class="resource-badge">Certificate</span></li>
+            <li><a href="https://www.coursera.org/professional-certificates/ibm-full-stack-javascript-developer" target="_blank">IBM Full-Stack JavaScript Developer Certificate – Coursera</a> <span class="resource-badge">Certificate</span></li>
+            <li><a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" target="_blank">GitHub Docs: Getting Started</a> <span class="resource-badge">Docs</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="data-ml" data-course-name="Data & Intelligent Systems">
+        <h2>Data & Intelligent Systems</h2>
+        <section class="topic" id="ml" data-topic-name="Machine Learning">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="ml-resources">▼</button>
+          <h3 style="display:inline">Machine Learning</h3>
+          <ul class="resources" id="ml-resources">
+            <li><a href="https://youtube.com/playlist?list=PL8HmoRTjTSlEgS2GsFaDr9zDLC1xD9FZf&si=m8nZkMxpi7jdZMAz" target="_blank">Python - Visually Explained</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyF4mGZbAyhcYc9t6ut5aW15&si=Y7K69kmOHWuFL0q-" target="_blank">Vector Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyHv0-40_nhO0PFrxQnPm7U9&si=ceeTrhESNF1EHdXs" target="_blank">Linear Algebra - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyGmMnpU5EBLHlfqjjEbATAN&si=J6-MEGc2mVUMBwhg" target="_blank">Integral Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyFq1zq2WFYSKYXjf8pjewWR&si=dixBCVmeMyRlyZwW" target="_blank">Differential Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLkWv3oO4kHnu095L52vLCVK8YN33yRrd_&si=78d1gzxU8ol_yPdY" target="_blank">Machine Learning for Beginners - Kylie Ying</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://developers.google.com/machine-learning/crash-course" target="_blank">Machine Learning Crash Course - Google Developers</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/paths/machine-learning-engineer" target="_blank">Machine Learning/AI Engineer Career Path – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/paths/data-science" target="_blank">Data Scientist: Machine Learning Specialist Career Path – Codecademy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codecademy.com/learn/ext-paths/mls-c01-aws-certified-machine-learning-specialty" target="_blank">AWS Certified Machine Learning – Specialty (MLS-C01) | Codecademy</a> <span class="resource-badge">Certificate</span></li>
+            <li><a href="https://www.skills.google/paths/17?catalog_rank=%7B%22rank%22%3A9%2C%22num_filters%22%3A1%2C%22has_search%22%3Afalse%7D#" target="_blank">Machine Learning Engineer career path - google skills</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://learn.mit.edu/search?q=machine+learning&resource=16504" target="_blank">Professional Certificate Program in Machine Learning & Artificial Intelligence - MIT learn</a> <span class="resource-badge">Certificate</span></li>
+            <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-neural-networks1" target="_blank">Introduction to Neural Networks - Great Learning</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.simplilearn.com/free-machine-learning-beginners-course-skillup" target="_blank">Machine Learning for Beginners - Simplilearn</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.simplilearn.com/learn-machine-learning-basics-skillup" target="_blank">Machine Learning using Python - simplilearn</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1" target="_blank">Augment your LLM Using Retrieval Augmented Generation - Nvidia</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.nvidia.com/en-au/training/" target="_blank">NVIDIA Deep Learning Institute - Nvidia</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/python-for-machine-learning-and-data-science" target="_blank">Python for Machine Learning and Data Science - Great Learning</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.coursera.org/learn/fundamentals-of-machine-learning-and-artificial-intelligence" target="_blank">Fundamentals of Machine Learning and Artificial Intelligence - AWS | coursera</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.fast.ai/" target="_blank">fast.ai – Practical Deep Learning for Coders</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.kaggle.com/learn" target="_blank">Kaggle Learn – Hands-on ML micro-courses</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://mlcourse.ai/" target="_blank">mlcourse.ai – Open Machine Learning Course</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://distill.pub/" target="_blank">Distill – Visual explanations of ML concepts</a> <span class="resource-badge">Website</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="data-science" data-topic-name="Data Science">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="data-science-resources">▼</button>
+          <h3 style="display:inline">Data science/Data engineering/Data analyst</h3>
+          <ul class="resources" id="data-science-resources">
+            <li><a href="https://www.skills.google/paths/16" target="_blank">Data Engineer career path - google skills</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&si=FQiu5GnmDpRk0kvK" target="_blank">Data Science - freeCodeCamp</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLM8lYG2MzHmTgsYKLJtdKwf6tHVbui9eE&si=3y5KzzcJC8YH3OdG" target="_blank">Hands-on Data Science: Complete your First Project - Mısra Turp</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLM8lYG2MzHmQn55ii0duXdO9QSoDF5myF&si=PVGT0p3PVtvoW96Y" target="_blank">50 Days of Deep Learning - Mısra Turp</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.codedex.io/numpy" target="_blank">NumPy - codédex</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codedex.io/python" target="_blank">Python - codédex</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codedex.io/intermediate-python" target="_blank">Intermediate Python - codédex</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.codedex.io/gen-ai" target="_blank">Gen AI - codédex</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://skillsbuild.org/college-students/data-science" target="_blank">Data Science - IBM</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://skillsbuild.org/college-students/artificial-intelligence" target="_blank">Artificial Intelligence - IBM</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.scaler.com/topics/course/python-for-beginners/" target="_blank">Python Course for Beginners With Certification: Mastering the Essential - scalar topics</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.scaler.com/topics/course/dbms/" target="_blank">DBMS Course - Master the Fundamentals and Advanced Concepts - scalar topics</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLUl4u3cNGP62A-ynp6v6-LGBCzeH3VAQB&si=vlBhGb-lYHCtAxhH" target="_blank">MIT 6.100L Introduction to CS and Programming using Python, Fall 2022 - MIT Opencourseware</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="languages" data-course-name="Languages">
+        <h2>Languages</h2>
+       <section class="topic" id="linguistics" data-topic-name="Linguistics">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="linguistics-resources">▼</button>
+          <h3 style="display:inline">Linguistics</h3>
+         <ul>
+          <li><a href="https://www.futurelearn.com/subjects/language-courses/linguistics" target="_blank">Linguistics Courses - Future Learn</a> <span class="resource-badge">Course</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtP5mp25nStsuDzk2blncJDW" target="_blank">Linguistics - CrashCourse</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtu.be/CDC19kEeKMA?si=OtvuFIVQZmLAaY-p" target="_blank">A Linguistics Guide for Beginners! - TheLingOtter</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLr6CpcHY99QqIQGICKokGldIeyyEvU0Oo" target="_blank">Linguistics 101 - Fingtam Languages</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL3TWMmazKIfFSsfz_1DLkcQgIj1Te5cvA" target="_blank">Secrets of an Accent Coach - Molly Parker | Voice & Accent Coach</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+
+        <section class="topic" id="french" data-topic-name="French">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="french-resources">▼</button>
+          <h3 style="display:inline">French</h3>
+          <ul class="resources" id="french-resources">
+            <li><a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIXphhtQZA1oVquLJXjaGuVZ" target="_blank">French Expressions &amp; Idioms Course - The perfect French with Dylane</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIUunH9-dFoRA3S5PVet28pt" target="_blank">French Conjugation Course - The perfect French with Dylane</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIURNkDOqtNfyM9JclJPdwsh" target="_blank">French Pronunciation Course - The perfect French with Dylane</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIVHNrb0PxzuzVopr9LczSRv" target="_blank">French Vocabulary Course -The perfect French with Dylane</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIVuQdKp5vdAFnssCOoeMQ4Z" target="_blank">French Grammar Course - The perfect French with Dylane</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpWjqV1PpXLUC-ZZkEUcXK7q" target="_blank">A1 Complete Beginners - Learn to French</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpWCa5X9mfAaTFznuVCjkdCc" target="_blank">French Grammar Explained - Learn to French</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpXmH8krQaEURA4Uvf76hBmO" target="_blank">Intermediate French - Learn to French</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpUjaMLYJFYyCZQxPKgbdI_R" target="_blank">Dictées - Learn to French</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLnUoJbvxjRghSi5GBz-rbdgEHBLLbYz3F" target="_blank">FRENCH SLANG 101 - French mornings with Elisa</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLnUoJbvxjRgjAFhKzNfbx6z4hS1Bb4sLo" target="_blank">LEARN FRENCH IN 3 MINUTES - French mornings with Elisa</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://french-mornings.teachable.com/l/products?sortKey=name&sortDirection=asc&page=1" target="_blank">French courses - French mornings with Elisa</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.open.edu/openlearn/education-development/university-ready/free-online-french-courses" target="_blank">French courses - Open uni, UK (Open learn)</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://app.dreaming.com/french/browse?sort=random" target="_blank">Dreaming French</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.youtube.com/@EasyFrench" target="_blank">Easy french (YouTube Channel)</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://open.spotify.com/show/2Mu5dTlsG1vRE25twu1P2l" target="_blank">Duolingo French Podcast - Duolingo</a> <span class="resource-badge">Podcast</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLmI6t9l1npeL74KSJNuA1D32tSFea3c71" target="_blank">French Pronunciation Lessons (Legacy) - Nastya Titova</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL7rag0wnKjPxRLxeT_8x8iieFv0SmBcFD" target="_blank">Intermediate level (A2/B1) - Ohlala french course</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.francaisauthentique.com/" target="_blank">Français Authentique – Natural spoken French</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://innerfrench.com/" target="_blank">InnerFrench – Intermediate French immersion</a> <span class="resource-badge">Podcast</span></li>
+            <li><a href="https://www.lawlessfrench.com/" target="_blank">Lawless French – Grammar explanations &amp; exercises</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://context.reverso.net/translation/french-english/" target="_blank">Reverso Context – French usage in real sentences</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://apprendre.tv5monde.com/" target="_blank">TV5Monde Apprendre – French with real media</a> <span class="resource-badge">Website</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="japanese" data-topic-name="Japanese">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="japanese-resources">▼</button>
+          <h3 style="display:inline">Japanese</h3>
+          <ul class="resources" id="japanese-resources">
+            <li><a href="https://www.youtube.com/playlist?list=PLA_RcUI8km1NMhiEebcbqdlcHv_2ngbO2" target="_blank">【JLPT N5】GENKI Grammar Made Clear 【NO CHAT】- ToKini Andy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLA_RcUI8km1P8bJzp3_TMMv1jhL3BcKQk" target="_blank">【JLPT N4】GENKI 2 Grammar Made Clear 【NO CHAT】- ToKini Andy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLA_RcUI8km1M5s3wym_WosknqVqaq03mL" target="_blank">【JLPT N3】Intermediate Japanese | Quartet 1 - ToKini Andy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLA_RcUI8km1Pk59cMMlqnQknuYcgjJy9Z" target="_blank">【JLPT N2】Intermediate Japanese | Quartet 2 - ToKini Andy</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.wanikani.com/" target="_blank">wanikani (for learning Kanji)</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLxMXdmBM9wPvsySiMoBzgh8d68xqKz1YP" target="_blank">Japanese Pitch Accent &amp; Pronunciation - Dogen</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLd5-Wp_4tLqbah30mUspsZGWkBVZlf9g9" target="_blank">KANJI with vocab - How to write JAPANESE - Japanese Ammo with Misa</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLd5-Wp_4tLqauXSm_MtZVyLGquLAJzUsL" target="_blank">Grammar Lessons for Upper Beginners / Lower Intermediates - Japanese Ammo with Misa</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLd5-Wp_4tLqYZxS5j3g6kbeOfVXlTkr3N" target="_blank">Grammar Lessons for Absolute Beginners - Japanese Ammo with Misa</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.tofugu.com/japanese/best-hiragana-and-katakana-learning-resources/" target="_blank">The Best Hiragana &amp; Katakana Learning Resources - tofugu</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLag_mhJfCJ-038RtKIdpE4KSi4t-Z98UT" target="_blank">Minna No Nihongo Vocabulary - NihonGoal</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+          
+  <section class="topic" id="spanish" data-topic-name="Spanish">
+    <div class="topic-header">
+      <button class="collapsible-toggle" aria-expanded="true" aria-controls="spanish-resources">▼</button>
+      <h3>Spanish</h3>
+    </div>
+
+    <div id="spanish-resources">
+
+    <h4>General & Comprehensible Input</h4>
+    <ul>
+      <li><a href="https://youtube.com/playlist?list=PLlpPf-YgbU7GbOHc3siOGQ5KmVSngZucl" target="_blank">Superbeginner – Dreaming Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLlpPf-YgbU7HWrrenMs3-nuhxgzyAiA-C" target="_blank">Beginner – Dreaming Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLlpPf-YgbU7Gssxi9f72cZktgOb4Vpdoy" target="_blank">Intermediate – Dreaming Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLlpPf-YgbU7EQVQR10ztdVrzdU455PDyZ" target="_blank">Advanced – Dreaming Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLlpPf-YgbU7HDyS2Ic86G7tc1I0Tpr2Ty" target="_blank">Dreaming Spanish Podcast</a> <span class="resource-badge">YouTube / Podcast</span></li>
+      <li><a href="https://open.spotify.com/show/2uDEXRSkpRdCmZUw8qt5fh" target="_blank">Duolingo Spanish Podcast</a> <span class="resource-badge">Podcast</span></li>
+    </ul>
+
+    <h4>European Spanish (Castilian)</h4>
+    <ul>
+      <li><a href="https://youtube.com/playlist?list=PLLFFrODykXG95MQpEK28TGfV4qL0LUlMe" target="_blank">Beginner Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLLFFrODykXG96ZZ-JQ4Upppexe_CCVRFo" target="_blank">Comprehensible Input</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLLFFrODykXG96K3DvC1lmWFzjEctkOLuJ" target="_blank">Vlogs</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLLFFrODykXG9-t3QzHXPKqz5YDMy7_JWb" target="_blank">Intermediate Spanish</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLRELLt-VSgXbCAvi80WJ0lWQSjo6Z3-Hp" target="_blank">Spanish Grammar Lessons – My Daily Spanish</a> <span class="resource-badge">YouTube</span></li>
+    </ul>
+
+    <h4>Mexican Spanish</h4>
+    <ul>
+      <li><a href="https://youtube.com/playlist?list=PLaNp8Rt4luFFNt7yrgR-oQodgIN5ZMKTW" target="_blank">Mexican Slang in 3 Minutes</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLxk81CH4n0RPmxHhyozo6SEUuxU0vGL5T" target="_blank">Tell Me Your Story – Andrea la Mexicana</a> <span class="resource-badge">YouTube / Podcast</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLxk81CH4n0ROaTFUA1vqtMDy9OUbVwL_H" target="_blank">El Podcast – Andrea la Mexicana</a> <span class="resource-badge">YouTube / Podcast</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLxk81CH4n0RN1Oay4LJ4E8sW5Es0W120N" target="_blank">Beginner / Upper-Beginner - Andrea la Mexicana</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLxk81CH4n0RO3DDEiz3fbqN5ClHaxobul" target="_blank">Intermediate - Andrea la Mexicana</a> <span class="resource-badge">YouTube</span></li>
+       <li><a href="https://youtube.com/playlist?list=PLZeR2gxLTHVh4tSAjEg1OnEiMCUJBMeAU" target="_blank">Complete Spanish Grammar – Hello Spanish</a> <span class="resource-badge">YouTube</span></li>
+    </ul>
+
+    <h4>Rioplatense Spanish (Argentina & Uruguay)</h4>
+    <ul>
+      <li><a href="https://www.youtube.com/playlist?list=PLe9ARcy5N6h7WVmFF_EUoUX0UOejla9b3" target="_blank">Easy Argentine Spanish - Easy Argentine Spanish | Español argentino 🧉</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLFtyosICHVneUUrxb3tY3z2giMagTZ2U5" target="_blank">La vida en Argentina - Español con Michelle B.</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLe9ARcy5N6h6oYZcNyJ8Di9FqWtLqX7ju" target="_blank">Useful Spanish Words and Phrases - Easy Argentine Spanish | Español argentino 🧉</a> <span class="resource-badge">YouTube</span></li>
+    </ul>
+
+    <h4>Chilean Spanish</h4>
+    <ul>
+      <li><a href="https://youtube.com/playlist?list=PLdaIB-VOgu8AqRSl_6Aekf_PYZBg-kfWH" target="_blank">Spanish a la Chilena</a> <span class="resource-badge">YouTube</span></li>
+    </ul>
+
+    <h4>Colombian Spanish</h4>
+    <ul>
+      <li><a href="https://youtube.com/playlist?list=PLk4ySBcPdVeRQUSwCx-5QPLsmq1FNqtOz" target="_blank">Colombian Spanish – Lingo Mastery</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PLuxkQNK6eN3_saOZ9xIrRGvzLsQh-S7ys&si=Xb-cdwPyTITylGv6" target="_blank">Colombian Spanish  - Why not Spanish?</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://youtube.com/playlist?list=PL3NtsgFFiGYLUSIrrxeuaH1VKkmFMQa3q&si=gOa0cfo4WLcBSRN2" target="_blank">Spanish w/ Andrea - Spanish with Andrea</a> <span class="resource-badge">YouTube</span></li>
+      <li><a href="https://colombianspanish.co/" target="_blank">Learn how to speak Spanish like a Colombian - Colombian spanish</a> <span class="resource-badge">course</span></li>
+    </ul>
+
+  </div>
+</section>
+
+        <section class="topic" id="portuguese" data-topic-name="Portuguese">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="portuguese-resources">▼</button>
+          <h3 style="display:inline">Portuguese</h3>
+         <ul>
+          <li><a href="https://youtube.com/playlist?list=PLVPq-uWoe5kntXhtt0UUHVfCPnuGzQryZ&si=_0U-eaqWEDKfZgaD" target="_blank">START HERE: Brazilian Portuguese Basic Course -  Speaking Brazilian Language School</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLVPq-uWoe5kljmIkFJa_zk4wOwPDML5by&si=dojV9GMkPUuYF8m2" target="_blank">Brazilian Portuguese Online Courses -  Speaking Brazilian Language School</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLVPq-uWoe5klLhvLS8hKzuzNVuXB6kAG0&si=pVGbGQLdv1XHvJHv" target="_blank"> Subjuntivo -  Speaking Brazilian Language School</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLVPq-uWoe5kkhnBXDbut8-Re5wivVE1vk&si=g9sHmLFkeKyB5k87" target="_blank"> Vocabulary & Expressions in Brazilian Portuguese -  Speaking Brazilian Language School</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLVPq-uWoe5klLvkb5qufDxQ470JEkFWBu&si=f3PU7JyZxD1Tq5_j" target="_blank"> Intermediate & Advanced Portuguese -  Speaking Brazilian Language School</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLSyQUztqfoRNeUGkQjK24iOVFiED71s1d&si=FCQJrkbsgFrvI5uT" target="_blank">A1 Brazilian Portuguese - Brazilian Portuguese with Sofia</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLSyQUztqfoRMb_Ca3BdPjcF88yuIs1h-3&si=h5hF8p7rnWyisy32" target="_blank"> A2 Brazilian Portuguese - Brazilian Portuguese with Sofia</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://youtube.com/playlist?list=PLSyQUztqfoROl-kbGyljw814tGewVjCf4&si=q__dnuedBlrB8lGM" target="_blank"> Survival Portuguese: Brazilian Portuguese for Beginners - Brazilian Portuguese with Sofia</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+  
+       <section class="topic" id="Turkish" data-topic-name="Turkish">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="turkish-resources">▼</button>
+          <h3 style="display:inline">Turkish</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLOBMFka6Ca0dlMDOoPJ7ZAwZv_hfo1AKf" target="_blank">Turkish for Beginners (A1) - Güncel Türkçe </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLOBMFka6Ca0e-Z18vl9LZaA9v-w_a36oe" target="_blank">Turkish For Beginners (A2) - Güncel Türkçe</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLOBMFka6Ca0eCf6fblzIT8gVgjWVdFpdK" target="_blank"> Turkish For Intermediate Learners B1 - Güncel Türkçe</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLOBMFka6Ca0cC66_hG5zU_CK3nQfYR_np" target="_blank">Turkish Proverbs - Güncel Türkçe</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLBv6B6E0IuHitPVg94ehaWMgOD2KFMpAs" target="_blank">Turkish Grammar Videos - FC LangMedia </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLGBd5T2SUvX4wYsP08p0hrKmp5FxLJ6XV" target="_blank">Turkish A1 - Ecem ile Türkçe </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLGBd5T2SUvX7jCnOplkYTkDySI3YK3LKD" target="_blank"> Short stories in Turkish for Beginners - Ecem ile Türkçe </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.lingohut.com/en/l98/learn-turkish" target="_blank">Learn Turkish - LingoHut </a> <span class="resource-badge">Course</span></li>
+        </ul>
+        </section>
+
+       <section class="topic" id="Arabic" data-topic-name="Arabic">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="arabic-resources">▼</button>
+          <h3 style="display:inline">Arabic</h3>
+        <div class="resources">
+          <h4>Modern Standard Arabic (MSA)</h4>
+          <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLhVHpzq0PDFdjYx_FllVms3c7FRGp8Cbv" target="_blank">Learn Modern Standard Arabic -  Imran Alawiye</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLgt4h-HlT-ZBwCUaA7dCBF2tV1vwo3_XK" target="_blank">Modern Standard Arabic Course for Beginners - Linguamid</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLcSexJe3V6FDn3Flm-_MJnWcmvKcnXsY1" target="_blank"> Elementary Modern Standard Arabic Course Volume 01 - Manny Rob</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLMfQOK0eSnz3HD_6ukDv4ySomQexUDDRO" target="_blank"> MODERN STANDARD ARABIC LESSONS - Fusha Arabic For Beginners</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL39vwA0JRTNIV5uraDu7u77vMdX7qdA2p" target="_blank">Modern Standard Arabic free course - Easy Arabic with Dina</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.arabacademy.com/learn-modern-standard-arabic-msa-online/" target="_blank">Learn Modern Standard Arabic (MSA) Online - ArabicAcademy</a> <span class="resource-badge">Course</span></li>
+          </ul>
+
+          <h4>Egyptian Arabic</h4>
+           <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLZ9CWldzdmFU-rtgJPdO_cg_IwZFS5SO7" target="_blank">Egyptian Arabic for beginners course - Speak Like An Egyptian</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL5l1XvFsw4S07jjN3qUH4X5_i2e9Nl1BV" target="_blank">Egyptian Arabic Conversation Course for beginners - Learn Arabic With Ahmed</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL39vwA0JRTNIy2SgFqqibEJgt5FcyGp3Z" target="_blank">ُEgyptian Arabic free course lessons - Easy Arabic with Dina</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL39vwA0JRTNLl58aSysRZEPyLJBRfgx3C" target="_blank">Podcast in Egyptian Arabic - Level A1/A2 - Easy Arabic with Dina</a> <span class="resource-badge">YouTube/Podcast</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL39vwA0JRTNIka7i7bbtXFdIC2K0XFhdp" target="_blank">Podcast in Egyptian Arabic - Level B1/B2 - Easy Arabic with Dina</a> <span class="resource-badge">YouTube/Podcast</span></li>
+            <li><a href="https://u-caninstitute.com/egyptian-arabic-program/" target="_blank">egyptian arabic program - u-caninstitute </a> <span class="resource-badge">Course</span></li>
+          </ul>
+
+           <h4>Levantine Arabic </h4>
+           <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLzhPF4aJZCXuu4PTKDXslJvn6xs7ipm2x" target="_blank">Fun Short Lebanese Arabic Lessons! - Globetrot With Arabic- Lebanese Arabic - Levantine</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLzhPF4aJZCXuofxNzv0yLRkAa1CaVrX15" target="_blank">30 DAY CHALLENGE ( LEBANESE ARABIC / LEVANTINE ARABIC ): SMALL LESSONS EVERYDAY FOR THIRTY DAYS - Globetrot With Arabic- Lebanese Arabic - Levantine</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://youtube.com/playlist?list=PLcwMvenlh3BGkL1mPvTIFzcvrW-nMfp8L&si=ENjaHmvDVIG0Q6R2" target="_blank">Daily Expressions - Levantine Arabic with Manar</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLcwMvenlh3BHOzy50o8WIJu5_DwP77mhx" target="_blank">Levantine Arabic Grammar A2 - Levantine Arabic with Manar</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://learnlevantine.com/" target="_blank">Learn Levantine Arabic</a> <span class="resource-badge">Course</span></li>
+          </ul>
+
+          <h4>Gulf Arabic</h4>
+           <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLRlFBRbOvXGU61nVGHCf3-q-_0Sn0v-GD" target="_blank">The Complete Saudi Arabic Course For Beginners - Arabently - Learn the Saudi Dialect </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRlFBRbOvXGUi4yBHMDhw2ZPQ1r1doBXZ" target="_blank">Master Arabic Grammar (Saudi Dialect) | For Beginners - Arabently - Learn the Saudi Dialect </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLoZ5YoYV3oK-EUyetA7ip1f-sLeDXFGz3" target="_blank"> Gulf Arabic spoken course -  Makki Study</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://arabiconlineschool.com/courses/learn-gulf-arabic-intro/" target="_blank">Introduction to Gulf Arabic - arabic online school</a> <span class="resource-badge">Course</span></li>
+          </ul>
+
+          <h4>Maghrebi Arabic</h4>
+           <ul>
+            <li><a href="https://www.youtube.com/playlist?list=PLEkLMDoNYeH9rVhKrv4oqUT-n7UPlrhWt" target="_blank">Moroccan Arabic Lessons - Effective Arabic </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLUIyBaSzEXR2chtpiKPaaVpKXYxTW_wT0" target="_blank">Darija Vocabulary 📓 - Assia West</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLUIyBaSzEXR0DMrMcxp3YcoV97r0cnhgQ" target="_blank">🐌 Darija Grammar  - Assia West</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLUIyBaSzEXR2vFf7SfS3_t81Gq3Q_9vvS" target="_blank">🛺Culture & Tutorials - Assia West</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLUIyBaSzEXR3cXwY_yjc2izsZK9kDCNCz" target="_blank">Writing in Darija ✍️ - Assia West</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLUIyBaSzEXR3IK6Cay56zhSW9Ahw0ZDNa" target="_blank">🎥Movies & Shows in Darija - Assia West</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.soas.ac.uk/study/find-course/arabic-maghrebi-beginners-course" target="_blank"> Arabic (Maghrebi) Beginners Course - soas </a> <span class="resource-badge">Course</span></li>
+          </ul>
+        </div>
+        </section>
+
+
+
+       <section class="topic" id="Russian" data-topic-name="Russian">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="-resources">▼</button>
+          <h3 style="display:inline">Russian</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLx1Hrg5Bg3xrnm30dNPZ5q2R9J6Zz2vUq" target="_blank">From zero to fluency | Russian Course For Beginners - Real Russian Club </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLx1Hrg5Bg3xp8M-IcXSXv6MUD8VQPvTjU" target="_blank">Russian VOCABULARY - Real Russian Club </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLx1Hrg5Bg3xokCh_c5XLLZ1okwRRRN9GO" target="_blank"> CASES - Real Russian Club </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLksj2KpxyeeqED8OKTTMdgCT8wA0OykLt" target="_blank"> The Easiest Russian Course: a complete course for beginners - Easy Russian with Yula</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLksj2KpxyeerYDe9Z1UblSnzKLbKXemhJ" target="_blank"> Learn Russian Vocabulary! / Прокачай свой словарный запас - Easy Russian with Yula</a> <span class="resource-badge">YouTube/Podcasat</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL2LxjqNKfYjuCM4zuYbt-W3lkGUciM1jr" target="_blank"> Russian Language Сourse for Beginners” (a beginner-focused Russian learning playlist on YouTube) - Natasha RusNow </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL2LxjqNKfYjtLvJskDpiDVntbOvWEyfcs" target="_blank">📖 100 most commonly used Russian nouns | Russian for beginners - Natasha RusNow </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL2LxjqNKfYjv75ekZ0phn7BFjqZX3iTqY" target="_blank"> Short stories in Russian (Level A2-B1) - Natasha RusNow </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL2LxjqNKfYjus22m5jrIfkamZ-yeRmhSu" target="_blank"> Русский, блин! (Подкаст на русском / Slow & Clear Russian Podcast, A2+) - Natasha RusNow </a> <span class="resource-badge">YouTube/Podcast</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLb5nZiuzvKAFf1Mces4GNaruyofxyVUar" target="_blank">Learn Russian in 365 DAYS - Russian with Nastya </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLJ9HaJ0LGmvqoaOjt7eUM7xy15wGL1N62" target="_blank">Russian Cases - Be Fluent in Russian</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL-wMR7KWeL5Lw4FOIjRCn3ukDpOaZoHaA" target="_blank">Russian Grammar - Lina's Lessons </a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+
+
+
+       <section class="topic" id="Korean" data-topic-name="Korean">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="-resources">▼</button>
+          <h3 style="display:inline">Korean</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k" target="_blank">Beginner Korean Course - Learn Korean with GO! Billy Korean </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLNE2Jnj4r8Nf8Jc6qJVgX9vIpOUFWw1p7" target="_blank"> 📋First Korean Alphabet Class - For Beginner - Hailey _Your Korean Friend</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLSLlyDsy6vcuUbHSh7y4HlEFYD-JUOYRW" target="_blank">Korean Grammar ! - Learn Korean with Hoya </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL-4YkLSNgEthTQ2cH6QbecxbtUGaPTKIv" target="_blank">Learn Korean Alphabets - Hangeul🇰🇷 | Start to Finish - Real Korean with Morning </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL-4YkLSNgEthTbiwp7nOLS2iCCqfIncax" target="_blank">Korean Short Lessons🔥 - Real Korean with Morning</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLbId6d40sjCHPn96Z416ki-Wi4lPME4DF" target="_blank"> Korean Pronunciation Tips - Talk To Me In Korean </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLbId6d40sjCFv1TP8T0EYDDAZG5s2s2NP" target="_blank">My First Korean Phrases | Beginner Course - Talk To Me In Korean </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLbId6d40sjCHwYuXDXqSc0N4dK8W8O7C3" target="_blank">Essential Korean Words & Phrases - Talk To Me In Korean </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLYBNFhpwariZkX9smYzJGrjiryv5H81hE" target="_blank"> 🇰🇷 New to learning Korean? Why not start with these? 💕🤓 - Natalia Garza</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLYBNFhpwariYfAvh5yeKWbfYDrK2JdyzG" target="_blank">Secret Resources for Learning Korean 🇰🇷 -   Natalia Garza</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+      </article>
+
+      <article class="course" id="cs-fundamentals" data-course-name="Computer Science Fundamentals">
+        <h2>Computer Science Fundamentals</h2>
+        <section class="topic" id="cs-basics" data-topic-name="CS Basics">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="cs-basics-resources">▼</button>
+          <h3 style="display:inline">Core Concepts</h3>
+          <ul class="resources" id="cs-basics-resources">
+            <li><a href="https://cs50.harvard.edu/x/" target="_blank">CS50x – Introduction to Computer Science (Harvard)</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://teachyourselfcs.com/" target="_blank">Teach Yourself Computer Science</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.nand2tetris.org/" target="_blank">From Nand to Tetris – Build a Computer from First Principles</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://missing.csail.mit.edu/" target="_blank">The Missing Semester of Your CS Education – MIT</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HDkbhG0sDW0b-VZXykEIAe5" target="_blank"> Intro to Computer Science - Python | Khan Academy - Khan Academy</a><span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL1lNrW4e0G8V59k2acXxwwGHrBQoTYZS7" target="_blank"> Computer Science - Up and Atom </a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="algorithms" data-topic-name="Algorithms">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="algorithms-resources">▼</button>
+          <h3 style="display:inline">Algorithms &amp; Data Structures</h3>
+          <ul class="resources" id="algorithms-resources">
+            <li><a href="https://www.khanacademy.org/computing/computer-science/algorithms" target="_blank">Algorithms – Khan Academy</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://visualgo.net/en" target="_blank">VisuAlgo – Visualising Data Structures &amp; Algorithms</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank">MIT 6.006 – Introduction to Algorithms</a> <span class="resource-badge">Course</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="mathematics" data-course-name="Mathematics">
+        <h2>Mathematics</h2>
+        <section class="topic" id="foundations" data-topic-name="Foundations">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="foundations-resources">▼</button>
+          <h3 style="display:inline">Mathematical Foundations</h3>
+          <ul class="resources" id="foundations-resources">
+            <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy – Mathematics</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.3blue1brown.com/" target="_blank">3Blue1Brown – Visual Mathematics</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://ocw.mit.edu/courses/mathematics/" target="_blank">MIT OpenCourseWare – Mathematics</a> <span class="resource-badge">Course</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="probability" data-topic-name="Probability">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="probability-resources">▼</button>
+          <h3 style="display:inline">Probability &amp; Statistics</h3>
+          <ul class="resources" id="probability-resources">
+            <li><a href="https://seeing-theory.brown.edu/" target="_blank">Seeing Theory – Probability &amp; Statistics Visualised</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.openintro.org/book/os/" target="_blank">OpenIntro Statistics</a> <span class="resource-badge">Book</span></li>
+            <li><a href="https://www.statlearning.com/" target="_blank">An Introduction to Statistical Learning</a> <span class="resource-badge">Book</span></li>
+            <li><a href="https://youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV&si=eM-plM3KwzDtqWhd" target="_blank">Statistics - The Organic Chemistry Tutor</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+
+        <section class="topic" id="calculus" data-topic-name="Calculus">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="calculus-resources">▼</button>
+           <h3 style="display:inline">Algebra, Precalculus, Calculus &amp; Differential equations</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BOyMIWkgPAbRQTB5u39q1p1" target="_blank"> Pre-Algebra - Krista King</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_rS8v_Nbifh9uBX2GTgPwcB" target="_blank"> Algebra 1 - NancyPi </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_r6fSJ7PQJXrze85bXa8oE3" target="_blank"> Algebra 2 - NancyPi</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BOLjlVKHcFyVh-K5PreRqY7" target="_blank">Precalculus - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyGnspdqKFykpT1QcXdyZT5o" target="_blank"> Trigonometric Functions - Math with Dr. Claire </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BPGQeSHLcDy6Li2IU2ylEd8" target="_blank"> Limits & Continuity - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_r80Qkas6hNodS_AKPM0VFM" target="_blank"> Precalculus - NancyPi</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_qxxxl6aZk7n7iUfw6l4hcu" target="_blank">Trigonometry - NancyPi </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BU5sTWZ2YxFhpXwsnMfMke7" target="_blank"> New Precalculus Video Playlist - The Organic Chemistry Tutor</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_qo9jU6XqmqzQnxivebIWkE" target="_blank"> Calculus: Limits - NancyPi</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_om5O1RBi5-vDRwVTvDwyeV" target="_blank"> Calculus: Derivatives - NancyPi</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_oXcHmmyCsSI3HcyKFj8y4E" target="_blank"> Calculus: Integration - NancyPi</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyFq1zq2WFYSKYXjf8pjewWR&si=dixBCVmeMyRlyZwW" target="_blank">Differential Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+              <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyGmMnpU5EBLHlfqjjEbATAN&si=J6-MEGc2mVUMBwhg" target="_blank">Integral Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BOYyyC-Gunxrh-jYnSfsQy0" target="_blank"> Calculus I - Krista King</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BMObozItpbiZ8f2pjf3qS9M" target="_blank"> Calculus II - Krista King</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BNjv72PRNBSrby40R6LKy6r" target="_blank">  Polar & Parametric - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BPaXEPecIAS_ddViV2_gcYL" target="_blank"> Sequences & Series - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgM099U1XQ4OK-lTtrkHJlg8" target="_blank">  Introduction to Vectors - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://youtube.com/playlist?list=PLVTG-sq2TyyF4mGZbAyhcYc9t6ut5aW15&si=Y7K69kmOHWuFL0q-" target="_blank">Vector Calculus - Math with Dr. Claire</a> <span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BM2TBMW9g--nTY-sG-SSAZC" target="_blank"> Partial Derivatives - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgP9lAPqVzuytn09oV_xqTIJ" target="_blank">  Differential Multivariable Calculus - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BNGhwTINwXoRle_Xq5Ooz70" target="_blank">Multiple Integrals   - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BMdeuQfJDVRJ5DPMduSzVow" target="_blank"> Calculus III - Krista King </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgOqJCBijQxClMIuumgtMinc" target="_blank"> Multivariable Calculus (Calc III) | Complete Semester Course - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgPC_gIdemRPpjqylAZ6Rwpt" target="_blank">Double and Triple Integrals  - Dr. Bevin Maultsby </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgP3uZBQqZbbKwRx-HQd8T_7" target="_blank"> Line Integrals in Multivariable Calculus - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgMsMKw_0mUk6m0wF3kqNmp3" target="_blank">  Calculus on Parametric Curves - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNuMUvJrIqpUjDdPcU1g_RA" target="_blank"> Scalar and Vector Surface Integrals - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li> 
+              <li><a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNxJ4syh2TI-0uZM9kBmsa_" target="_blank"> Second Order ODEs and the Method of Undetermined Coefficients - Dr. Bevin Maultsby</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6" target="_blank">Differential equations -3Blue1Brown </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL96AE8D9C68FEB902" target="_blank"> Differential Equations - Khan Academy</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://youtube.com/playlist?list=PL12MfBleRF0o2bBEVO4ZiGRZH5L4gvndC&si=aL5KNGYwo_ZqmqVw" target="_blank">Integration Bee Training for Beginners - Silver </a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL12MfBleRF0oRIXaiPArTPX5avUMrBlCL" target="_blank"> Integration Bee Training for Intermediates - Silver</a><span class="resource-badge">YouTube</span></li>
+              <li><a href="https://www.youtube.com/playlist?list=PL12MfBleRF0rfMCmWWLMNfIrD6arK3FYg" target="_blank"> Integration Bee Training for Advanced - Silver </a><span class="resource-badge">YouTube</span></li>
+            </ul>
+        </section>
+
+        <section class="topic" id="linear-algebra" data-topic-name="Linear Algebra">
+        <button class="collapsible-toggle" aria-expanded="true" aria-controls="linear-algebra-resources">▼</button>
+        <h3 style="display:inline">Linear Algebra</h3>
+        <ul class="resources" id="linear-algebra-resources">
+          <li><a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyHv0-40_nhO0PFrxQnPm7U9" target="_blank">Linear Algebra - Math with Dr. Claire  </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://personal.math.ubc.ca/~carrell/NB.pdf" target="_blank">FUNDAMENTALS OF LINEAR ALGEBRA</a> <span class="resource-badge">Book</span></li>
+          <li><a href="https://math.emory.edu/~lchen41/teaching/2020_Fall/Nicholson-OpenLAWA-2019A.pdf" target="_blank">Linear Algebra With Applications</a> <span class="resource-badge">Book</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLAEgL_CQRjwQq9-V0rcnC5Q_tA42eVYZ1" target="_blank">Linear Algebra - Linda Green</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank">Essence of linear algebra - 3Blue1Brown</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLpcwHaLYiaEXW5fLNOlItPH4ATorKjBuc" target="_blank">Linear Algebra Full Course - Dr. Valerie Hower</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+      </section>
+
+      </article>
+
+      <article class="course" id="world-society" data-course-name="World & Society">
+        <h2>World &amp; Society</h2>
+        <section class="topic" id="geography" data-topic-name="Geography">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="geography-resources">▼</button>
+          <h3 style="display:inline">Geography &amp; The World</h3>
+          <ul class="resources" id="geography-resources">
+            <li><a href="https://www.nationalgeographic.com/" target="_blank">National Geographic – Geography, nature &amp; cultures</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.worldometers.info/" target="_blank">Worldometer – Real-time global statistics</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.youtube.com/@RealLifeLore" target="_blank">RealLifeLore – Geopolitics &amp; geography explained</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/@CaspianReport" target="_blank">CaspianReport – International relations &amp; geopolitics</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="economics" data-topic-name="Economics">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="economics-resources">▼</button>
+          <h3 style="display:inline">Economics &amp; Society</h3>
+          <ul class="resources" id="economics-resources">
+            <li><a href="https://www.khanacademy.org/economics-finance-domain" target="_blank">Khan Academy – Economics &amp; finance</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.youtube.com/@EconomicsExplained" target="_blank">Economics Explained</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://ourworldindata.org/" target="_blank">Our World in Data – Research-backed global data</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.imf.org/en/Publications/fandd" target="_blank">IMF Finance &amp; Development Magazine</a> <span class="resource-badge">Magazine</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="arts-culture" data-course-name="Arts & Culture">
+        <h2>Arts &amp; Culture</h2>
+        <section class="topic" id="film-storytelling" data-topic-name="Film & Storytelling">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="film-storytelling-resources">▼</button>
+          <h3 style="display:inline">Film, Storytelling &amp; Media</h3>
+          <ul class="resources" id="film-storytelling-resources">
+            <li><a href="https://www.youtube.com/@EveryFrameAPainting" target="_blank">Every Frame a Painting – Film analysis</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/@LessonsfromtheScreenplay" target="_blank">Lessons from the Screenplay</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- BEGIN new sections -->
+      <article class="course" id="science" data-course-name="Science">
+        <h2>Science</h2>
+        <section class="topic" id="physics" data-topic-name="Physics">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="physics-resources">▼</button>
+          <h3 style="display:inline">Physics and engineering</h3>
+          <ul class="resources" id="physics-resources">
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIK-JJJEYKqdXIQId9915lKG" target="_blank"> Electrostatics grade 10 - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvILO5xxpgK4KQZx_70bBGBsw" target="_blank"> Grade 10 Mechanical Energy Physics - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIJAfXAZIO1PURnrI_lFuAV8" target="_blank"> Vectors vs Scalars Grade 10 Physics- Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIKH6iRdnoNrw3wWqOOolPK6" target="_blank"> Newton's Laws Grade 11 and Grade 12 Physics - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIK39vHgubo6fc7ZrshmHowt" target="_blank"> The Photoelectric Effect: Grade 12 Physics - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIpr62ghRLqechjqwkt-g0G" target="_blank"> Motion in one dimension: Mechanics (physics)- Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIfwHt7oPpBP6uoIjdyeZoJ" target="_blank">Grade 11 & 12 Electricity (Electric Circuits) - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvILu1P8ECQV26idabPmAHfPM" target="_blank">Grade 12 Momentum and impulse - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIJkQW9tNNwGSorXW2LrwvDw" target="_blank">Motors and Generators Electrodynamics Grade 12 - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy – Physics</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://ocw.mit.edu/courses/physics/" target="_blank">MIT OpenCourseWare – Physics</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.youtube.com/@MinutePhysics" target="_blank">MinutePhysics – Explaining concepts visually</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BU6wPPLDsoTj1_wEf0LSNeR" target="_blank">New Physics Video Playlist - The Organic Chemistry Tutor </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL8ER5-vAoiHAWm1UcZsiauUGPlJChgNXC" target="_blank">Maths of Quantum Mechanics - Quantum Sense</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL1lNrW4e0G8WmWpW846oE_m92nw3rlOpz" target="_blank"> Quantum Physics - Up and Atom</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL1lNrW4e0G8VrmWN1ZQ9FE72kDytLq2hi" target="_blank"> Physics - Up and Atom </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BV9E-N8tSExU1djL6slnjbL" target="_blank">Electronic Circuits - The Organic Chemistry Tutor</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLzJVIm19zK-67YXCcDtc-G3tmi-ffSyCb" target="_blank">Introduction to Aerodynamics - Aliya Burkit</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLzJVIm19zK-54kWnzJbk5SWZwlnFCytMC" target="_blank">Studying aerospace engineering - Aliya Burkit</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+
+        </section>
+        <section class="topic" id="chemistry" data-topic-name="Chemistry">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="chemistry-resources">▼</button>
+          <h3 style="display:inline">Chemistry</h3>
+          <ul class="resources" id="chemistry-resources">
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIXgjihU1XaQZiS_YlyTdAl" target="_blank">Grade 10 Chemistry Naming Compound - Miss Martins Maths and Science  </a><span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIJxnXbNirkoziLi_w2ZgXmT" target="_blank"> Grade 10 The Atom: Isotopes, electron configuration, Aufbau diagrams - Miss Martins Maths and Science  </a><span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvILSURH08Cnus_65oUbvJYBY" target="_blank"> Grade 10 Chemistry Matter and Materials - Miss Martins Maths and Science  </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIKrk_9V1px8X9YYmG9y5gPU" target="_blank">Balancing Chemical Equations - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIL-vMc5Jc1L9YaLgR5wpx-k" target="_blank"> Redox reactions Grade 11 Chemistry - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIJIxTIcjvUCMZ3u7znEMX7K" target="_blank">Grade 12 Organic Chemistry - Miss Martins Maths and Science</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIKc0ZKcAp8eAkWbrQQ2OCPF" target="_blank"> Grade 12 Organic Chemistry Reactions - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvILVlTUcjn11Yt3Ucf4r0H2N" target="_blank">Rate and extent of reaction Grade 12  Chemistry - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIwTWybFIkFNcf7pRjU1YQJ" target="_blank"> Acids and Bases: Chemistry gr 11 and 12 - Miss Martins Maths and Science </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIbrF3kDol9wcISP33YSc_p" target="_blank"> Kinetic Molecular Theory & Heating Curve - Miss Martins Maths and Science  </a>  <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.khanacademy.org/science/chemistry" target="_blank">Khan Academy – Chemistry</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://ocw.mit.edu/courses/chemistry/" target="_blank">MIT OpenCourseWare – Chemistry</a> <span class="resource-badge">Course</span></li>
+          </ul>
+        </section>
+
+        <section class="topic" id="neuroscience" data-topic-name="Neuroscience">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="neuroscience-resources">▼</button>
+          <h3 style="display:inline">Neuroscience</h3>
+          <ul class="resources" id="neuroscience-resources">
+            <li><a href="https://www.youtube.com/playlist?list=PLqgZEQsU_8E0l1P9bKR6yKOKPMpoJ_tLR" target="_blank">Introduction to Neuroscience - Bing Wen Brunton</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://pages.ucsd.edu/~mboyle/COGS107a/pdf-files/Neuroscience.pdf" target="_blank">NEUROSCIENCE THIRD EDITION</a> <span class="resource-badge">Book</span></li>
+            <li><a href="https://watermark02.silverchair.com/book_9780262367332.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAyMwggMfBgkqhkiG9w0BBwagggMQMIIDDAIBADCCAwUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMmeKeHWei1oKXVydvAgEQgIIC1g9SoHhUHLHa-awfaOCKBTWewNk_0o9I2bsiAmomus3XzDSuNn-pb3ZG9-RrVolu1g6iW3wXDNVDC2B_ZaPmyxq82vYABh32ORCMg6pBA-GCX7DEtg87eKVTxWBTwglTJm-B5a5yr4LuoBB2G4-JGtcX1XNbfqH3rvy4dJoPJo7gqddvJb6DbK_WOuRVtEsPbjuFQNOpahHrtFSg5HsPlFE-7H30VRCUV3EegV0Hf0GOaBvlc7Xkf942_VVBDatJm5blpr_Ys_zMi-a-gmcK5Ti60vtyWe7YTAXBZuMqnpv0tUnfZert3faFlPef1AUjbYrJ09fPRTvL4lWlmtrU7Qyw0GFQK3A2IdfubGs3gjg7qkdGybckCCJ-9t4cmM89ZgcN0Gjzr6pa4jZH6jyhTGBokZ7k-4BJwU9F69WWKuXSU1qQmZBdnc27ye4hcI7g_oEB7cKS0eqvdFyFJApspK-a7gmelcxkM9TVzVU0Eid20j8IcXnhe7PgiILc982qOdlB1OMeivLasvpJNKHzC5ePsK2l3zSYL4A9mLJWQ5ew1FW1PyzkkqzhWF-7n_bWqgXIw0ET61wzGFrXlrti0tiTopE2Ft3BL1HlMBDAbJ-S2WRkLytUvdaM-4Qq8fKnmPLTwRA88ldN8-OvgCUCtH-AEGrcYqrkh24D-j6Jmjem1ia8Ge2vxkEbFEgkUCUDm7J2y6p4vi8a7z2V_i0JEW2xwa9KGX3Iw4laNTX5eM3kqF-yRqLi8tcZ48eEXWx9Kdz8giCVepzdweAFz_lkDSv-Nl_VHZYIs-mS0_q9bXaAlh1qxKUh2zuap1ylEI9xwpuHiqezZwVhwsSvPsTgEpm3PlK3147V5NwDC4R--Ur3bNtMaJOPmRiGjM3b2zn-q1MhsTaU_xoVKf-NrQiz4AP7iCHhqVe7I8PqyI8TqF0W337djFe-XSMg7oRSY36R4Qj5DiPH7w" target="_blank"> Neuroscience and Philosophy</a><span class="resource-badge">Book</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLpXfHEl2fzl6JWpKGs4w2X2laduGk9xY3" target="_blank">MIT 9.13 The Human Brain, Spring 2019 - MIT OpenCourseWare</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="life-skills" data-course-name="Life Skills">
+        <h2>Life Skills</h2>
+        <section class="topic" id="finance" data-topic-name="Personal Finance">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="finance-resources">▼</button>
+          <h3 style="display:inline">Personal Finance</h3>
+          <ul class="resources" id="finance-resources">
+            <li><a href="https://www.investopedia.com/personal-finance-4689743" target="_blank">Investopedia – Personal Finance Guide</a> <span class="resource-badge">Website</span></li>
+            <li><a href="https://www.khanacademy.org/college-careers-more/personal-finance" target="_blank">Khan Academy – Personal Finance</a> <span class="resource-badge">Course</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="productivity" data-topic-name="Productivity & Mindset">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="productivity-resources">▼</button>
+          <h3 style="display:inline">Productivity & Mindset</h3>
+          <ul class="resources" id="productivity-resources">
+            <li><a href="https://www.ted.com/topics/productivity" target="_blank">TED – Productivity Talks</a> <span class="resource-badge">Talks</span></li>
+            <li><a href="https://jamesclear.com/" target="_blank">James Clear – Habits & Productivity</a> <span class="resource-badge">Website</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="arts-creativity" data-course-name="Arts & Creativity">
+        <h2>Arts & Creativity</h2>
+        <section class="topic" id="painting" data-topic-name="Painting & Visual Arts">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="painting-resources">▼</button>
+          <h3 style="display:inline">Painting & Visual Arts</h3>
+          <ul class="resources" id="painting-resources">
+            <li><a href="https://www.khanacademy.org/humanities/ap-art-history" target="_blank">Khan Academy – Art History</a> <span class="resource-badge">Course</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLlQ1kjmPt5OQ-PTtCnZHT6GHWUvY3QrmF" target="_blank">DRAWING TUTORIALS - Bobbo Andonova</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLejnOfiq1zb8YQwUw8o6mk9Krw5-Icd_D" target="_blank">Architecture drawing course -  Kaddy Taylor</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLAEQD0ULngi67rwmhrkNjMZKvyCReqDV4" target="_blank">Bob Ross - The Joy of Painting (Full Episodes) - Bob Ross</a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+        <section class="topic" id="music" data-topic-name="Music">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="music-resources">▼</button>
+          <h3 style="display:inline">Music & Composition</h3>
+          <ul class="resources" id="music-resources">
+            <li><a href="https://www.youtube.com/@MusicTheoryForGuitar" target="_blank">Music Theory for Guitar – YouTube</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL5PNXIkCYnciOKgTgKfrmjkwBsbm9zWfq" target="_blank">Beginner Piano Lessons - Dylan Laine </a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL5PNXIkCYncgRoUnMAojLDU8nlZHMToJC" target="_blank">Ukulele Worship Tutorials (FULL PLAYLIST) - Dylan Laine</a> <span class="resource-badge">YouTube</span></li>
+            <li><a href="https://www.youtube.com/playlist?list=PL6urkeK7KgD6z9rImgxwiqBYZVwq31zlg" target="_blank"> LEARN TO PLAY THE VIOLIN COMPLETE LESSONS 1 to 30 - The Online Piano & Violin Tutor </a> <span class="resource-badge">YouTube</span></li>
+          </ul>
+        </section>
+      </article>
+
+      <article class="course" id="fitness-wellbeing" data-course-name="Fitness and wellbeing">
+        <h2>Fitness and wellbeing</h2>
+         <section class="topic" id="calisthenics" data-topic-name="Calisthenics">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="calisthenics-resources">▼</button>
+          <h3 style="display:inline">Calisthenics</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLQL4hsAIlKd3YnStBqJ8QOJeqRBsd38iM" target="_blank">Handstand Coaching - Chala Moves</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLqu7-BDuWFOJIKlXWJs5e9G_3MaGe-Wn7" target="_blank">Follow Along Calisthenics Workouts mobility - Summerfunfitness</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL0jcaAbjqYdupvV7fzKHZ-dVJYhbx6GqI" target="_blank"> 10 Days to Middle Splits - Adison Briana</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLX8QIwhN83ZXbP19JNDn8_usq5_2uJ3gL" target="_blank">HOW TO START CALISTHENICS -  THENX</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL9uQcQAWi8f_sO9JqItq8U4XwME55WrU1" target="_blank">Calisthenics Workouts - Clara del Sol - Yoga & Calisthenics Teacher</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/@LoveFromMeli" target="_blank">Meli (Yotube Channel) </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL9uQcQAWi8f8_vbq8YpQfcwyW3L2AkD59" target="_blank">Yoga for Calisthenics - Clara del Sol - Yoga & Calisthenics Teacher </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLU8uVkF9zP5QApLYgUdKO142S96WhMzkb" target="_blank"> Mobility Flows - mobility by julia reppel</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLEkRYDcpWohzpMdqcjSuIpLVXkFAiltC6" target="_blank"> Abs & Core - Pamela Reif</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+
+
+        <section class="topic" id="Yoga" data-topic-name="Yoga">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="-resources">▼</button>
+          <h3 style="display:inline">Yoga</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PLW0v0k7UCVrngDE2PN5WOc8hzwYhAb2U9" target="_blank">Evening Yoga Movement - Yoga with Kassandra</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL0jcaAbjqYdueJPSC1zvUCjHI9AKSHK9t" target="_blank">Feminine Yoga - Adison Briana</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL0jcaAbjqYduBZorgufQUcPNygcWE06Qu" target="_blank">PCOS Yoga Series - Adison Briana </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL0jcaAbjqYdt91o5m6VtwR0brC-JdF5K_" target="_blank"> 30 Day Beginner Yoga Series - Adison Briana</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLMsdkm29X7NXUPQOgGIvWfcXCYZzAGuhx" target="_blank">Yoga Doux | Yin et Restauratif - Mary Hogan Yoga</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLBZsrExV-MtAt6V5zm_5oL5_pdzmcb_Qi" target="_blank">POWER YOGA WORKOUTS - Gayatri Yoga</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLcvBx66p0nltGVclKWPPTQuV6HDz_5wvf" target="_blank">ELLE Yoga - ELLE</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLui6Eyny-UzzFFfpiil94CUrWKVMaqmkm" target="_blank">HOME - A 30 Day Yoga Journey - Yoga With Adriene</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.truenakedyoga.com/" target="_blank">true naked yoga</a> <span class="resource-badge">Course</span></li>
+        </ul>
+        </section>
+
+
+
+        <section class="topic" id="Meditation" data-topic-name="Meditation">
+          <button class="collapsible-toggle" aria-expanded="true" aria-controls="-resources">▼</button>
+          <h3 style="display:inline">Meditation</h3>
+         <ul>
+          <li><a href="https://www.youtube.com/playlist?list=PL0jcaAbjqYdt7wLhFRDOtVOmUB3bX8DHv" target="_blank">Guided Meditations  - Adison Briana </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLSQl0a2vh4HBbhBafKm-m7I-nO3iJLqdV" target="_blank">Guided meditations - Khan Academy</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PL37ErCJmMWd1igItmbhPUwTwr1yKwz_HG" target="_blank">MEDITATION 💭 - Lavendaire</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/watch?v=-vPZtZRAUQA" target="_blank">15 Minute Manifestation Meditation for Positive Energy in 2025 - unjaded jade </a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLH5JoPhpYKU1A1gdtVuAcP82rHLXAo9RP" target="_blank">Qantas Meditation Series - Qantas</a> <span class="resource-badge">YouTube</span></li>
+          <li><a href="https://www.youtube.com/playlist?list=PLKUp00vKkbXdLmhYR0ndbGX0V4x_sP5jE" target="_blank">Headspace: Guide to Meditation Full Episodes - Headspace</a> <span class="resource-badge">YouTube</span></li>
+        </ul>
+        </section>
+      </article>
+      <!-- END new sections -->
+
+      <article class="course" id="references">
+        <h2>References &amp; Notes</h2>
+        <ul class="resources">
+          <li>All external links are provided for educational purposes.</li>
+          <li>Resource quality prioritises clarity, accessibility, and conceptual depth.</li>
+          <li>This site is a living document and will evolve as new material is reviewed.</li>
+        </ul>
+      </article>
+
+    </div>
+  </main>
+  <script src="script.js"> </script>
+  <footer>    
+    <div class="footer-column">
+      <h4>About This Site</h4>
+      <ul>
+        <li>Curated learning resources across tech, languages, science, and culture.</li>
+        <li>All external links are educational and verified.</li>
+        <li>This site evolves as new resources are reviewed.</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Credits</h4>
+      <ul>
+        <li>Built with help of ChatGPT</li>
+        <li>Design inspired by encyclopaedia styling</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-note">
+    &copy; 2026 bemoresmart. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>

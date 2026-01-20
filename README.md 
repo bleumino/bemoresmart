@@ -1,0 +1,58 @@
+# BeMoreSmart
+
+BeMoreSmart is a curated language learning resource library built for long-term study. It provides an easy-to-navigate catalog of resources across multiple languages, with features like bookmarks, search filters, dark mode, and saved progress.
+
+---
+
+## 🚀 Features
+
+- **Language resource library** with sections for multiple languages
+- **Topic bookmarks** (save whole language sections)
+- **Individual resource saving** (save specific links)
+- **Search + filter system** for quick navigation
+- **Dark mode toggle** with saved preferences
+- **Random topic button** for discovering new resources
+- **Smooth scrolling** and collapsible sections
+- **Built for long-term use** (designed to be left alone for months)
+
+---
+
+## 🧠 Why this exists
+
+BeMoreSmart is designed to be a simple, fast, and effective reference tool for language learners. Instead of searching through multiple sites, this library gives you a clean, structured hub of the best learning content in one place.
+
+---
+
+## 📁 Project Structure
+/bemoresmart
+├── index.html
+├── style.css
+└── script.js
+
+---
+
+## 🛠️ How to Run Locally
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/bleumino/bemoresmart.git
+
+ ⭐ How to Contribute
+
+Want to add new languages or resources?
+	1.	Fork the repo
+	2.	Add your resources in index.html
+	3.	Create a pull request
+
+⸻
+
+📌 Notes
+	•	This site uses localStorage to save bookmarks and theme preferences.
+	•	The project is intentionally simple so it can be easily expanded in the future.
+
+⸻
+
+🧾 License
+
+This project is open source and free to use.
