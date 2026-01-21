@@ -458,3 +458,7 @@ function dailyRecommendation() {
   document.getElementById("dailyRec").textContent = item.textContent;
 }
 
+
+document.getElementById("learningFramework").addEventListener("click", () => {
+  window.location.href = "learning-framework.html";
+});
