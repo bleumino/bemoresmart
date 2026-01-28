@@ -486,49 +486,4 @@ footer a:hover {
 }
 
 
-/* Challenges page */
-.challenge-card {
-  border: 1px solid var(--border);
-  background: var(--toc-bg);
-  padding: 1.2rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
 
-.challenge-card h3 {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.challenge-card p {
-  margin: 0.6rem 0 1rem 0;
-  color: var(--muted);
-}
-
-.challenge-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.challenge-actions button {
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: 1px solid var(--badge-border);
-  background: var(--badge-bg);
-  color: var(--text);
-  cursor: pointer;
-}
-
-.challenge-actions button:hover {
-  background: var(--badge-text);
-  color: var(--bg);
-}
-
-.challenge-status {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-left: auto;
-  font-weight: 600;
-}
