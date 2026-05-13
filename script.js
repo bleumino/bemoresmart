@@ -462,3 +462,5 @@ function dailyRecommendation() {
 document.getElementById("learningFramework").addEventListener("click", () => {
   window.location.href = "learning-framework.html";
 });
+
+
