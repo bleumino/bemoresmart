@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Roadmaps</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#2563eb;
+
+  --button-bg:#ffffff;
+  --button-hover:#f3f4f6;
+}
+
+/* DARK MODE */
+
+[data-theme="dark"]{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --border:#1f2937;
+  --accent:#60a5fa;
+
+  --button-bg:#111827;
+  --button-hover:#1f2937;
+}
+
+body{
+  font-family:Inter, Arial, sans-serif;
+  background: var(--button-bg);
+  color:var(--text);
+  padding:40px 20px;
+}
+
+/* Header */
+
+.page-header{
+  max-width:1200px;
+  margin:0 auto 50px auto;
+}
+
+.page-header h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.page-header p{
+  color:var(--muted);
+  font-size:1.05rem;
+}
+
+/* Grid */
+
+.roadmap-grid{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
+
+/* Cards */
+
+.roadmap-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:26px;
+  text-decoration:none;
+  color:inherit;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.roadmap-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+  box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.roadmap-icon{
+  font-size:2.5rem;
+  margin-bottom:18px;
+}
+
+.roadmap-card h2{
+  font-size:1.4rem;
+  margin-bottom:10px;
+}
+
+.roadmap-card p{
+  color:var(--muted);
+  line-height:1.6;
+  margin-bottom:18px;
+}
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.tags span{
+  background:#eef2ff;
+  color:#4338ca;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:0.8rem;
+  font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+  .page-header h1{
+    font-size:2.2rem;
+  }
+
+}
+
+/* Top buttons */
+
+#themeToggle,
+#homePage{
+  position: fixed;
+  top: 18px;
+  z-index: 999;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--toc-bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+#themeToggle{
+  left: 18px;
+}
+
+#homePage{
+  left: 160px;
+}
+
+#themeToggle:hover,
+#homePage:hover{
+  background: var(--badge-bg);
+  border-color: var(--badge-border);
+}
+
+#themeToggle:active,
+#homePage:active{
+  transform: translateY(1px);
+}
+
+/* Mobile */
+
+@media (max-width:700px){
+
+  #themeToggle,
+  #homePage{
+    left: 12px;
+    font-size: 0.9rem;
+    padding: 7px 10px;
+  }
+
+  #themeToggle{
+    top: 12px;
+  }
+
+  #homePage{
+    top: 56px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<header class="page-header">
+    <div class="top-buttons">
+
+  <button id="themeToggle" aria-label="Toggle dark mode">
+    🌙 Dark mode
+  </button>
+
+  <button id="homePage" type="button" aria-label="Go to Home page">
+    Home
+  </button>
+
+</div>
+
+
+  <h1>Learning Roadmaps</h1>
+
+  <p>
+    Explore structured learning paths across technology,
+    engineering, languages, creativity, and life skills.
+  </p>
+  
+</header>
+
+
+<main class="roadmap-grid">
+
+  <!-- Machine Learning -->
+
+  <a href="machine-learning.html" class="roadmap-card">
+
+    <div class="roadmap-icon">🤖</div>
+
+    <h2>Machine Learning</h2>
+
+    <p>
+      Learn Python, mathematics, data science,
+      neural networks, and modern AI systems.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>AI</span>
+      <span>Data</span>
+    </div>
+
+  </a>
+
+
+   <a href="electrical-engineering.html" class="roadmap-card">
+
+    <div class="roadmap-icon">⚡️</div>
+
+    <h2>Electrical Engineering</h2>
+
+    <p>
+      Learn circuits, electronics, power systems,
+      and modern electrical technologies.
+    </p>
+
+    <div class="tags">
+      <span>Power</span>
+      <span>Electronics</span>
+      <span>Circuits</span>
+    </div>
+
+  </a>
+
+
+  <!--Robotics Engineering -->
+
+  <a href="robotics.html" class="roadmap-card">
+
+    <div class="roadmap-icon">🤖</div>
+
+    <h2>Robotics Engineering</h2>
+
+    <p>
+      Learn Python, mathematics, ML,
+      Electronics and modern Robotics systems.
+    </p>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>AI</span>
+      <span>Electronics</span>
+    </div>
+
+  </a>
+
+
+  <!--french -->
+
+  <a href="french.html" class="roadmap-card">
+
+    <div class="roadmap-icon">🇫🇷</div>
+
+    <h2>French</h2>
+
+    <p>
+      Learn French, culture, and communication skills.
+    </p>
+
+    <div class="tags">
+      <span>French</span>
+      <span>Culture</span>
+      <span>Communication</span>
+    </div>
+
+  </a>
+
+
+  <!--math -->
+
+  <a href="math.html" class="roadmap-card">
+
+    <div class="roadmap-icon">🧮</div>
+
+    <h2>Math</h2>
+
+    <p>
+      Learn math, algebra, and calculus.
+    </p>
+
+    <div class="tags">
+      <span>Math</span>
+      <span>Algebra</span>
+      <span>Calculus</span>
+    </div>
+
+  </a>
+
+</main>
+<script>
+const themeToggle = document.getElementById("themeToggle");
+
+  // Load saved theme
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    themeToggle.textContent = "☀️ Light mode";
+
+  }
+
+  // Toggle theme
+
+  themeToggle.addEventListener("click", () => {
+
+    const currentTheme =
+
+      document.documentElement.getAttribute("data-theme");
+
+    if (currentTheme === "dark") {
+
+      document.documentElement.removeAttribute("data-theme");
+
+      localStorage.setItem("theme", "light");
+
+      themeToggle.textContent = "🌙 Dark mode";
+
+    } else {
+
+      document.documentElement.setAttribute("data-theme", "dark");
+
+      localStorage.setItem("theme", "dark");
+
+      themeToggle.textContent = "☀️ Light mode";
+
+    }
+
+  });
+document.getElementById("homePage").addEventListener("click", () => {
+  window.location.href = "index.html";
+});
+
+  </script>
+</body>
+</html>

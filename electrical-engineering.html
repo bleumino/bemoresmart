@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Electrical Engineering Roadmap</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:hwb(220 90% 8%);
+  --accent:#2563eb;
+  --button-bg:#ffffff;
+  --button-hover:#f3f4f6;
+}
+
+/* DARK MODE */
+[data-theme="dark"]{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --border:#1f2937;
+  --accent:#60a5fa;
+  --button-bg:#111827;
+  --button-hover:#1f2937;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Page layout */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header{
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.header h1{
+  font-size: 2.5rem;
+}
+
+.header p{
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Roadmap steps */
+.step{
+  max-width: 900px;
+  margin: 20px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.step:hover{
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.step h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.step p{
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Resources */
+.resources{
+  margin-top: 12px;
+}
+
+.resources a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--button-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.resources a:hover{
+  background: var(--button-hover);
+}
+
+/* Top buttons */
+.top-bar{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--button-hover);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <button id="themeToggle">🌙 Dark mode</button>
+  <button onclick="window.location.href='index.html'">Home</button>
+  <button onclick="window.location.href='roadmap.html'">Roadmap</button>
+</div>
+
+<div class="header">
+  <h1>Electrical Engineering Roadmap</h1>
+  <p>
+    A structured path from zero → advanced electrical engineering.
+    Follow step by step or jump around.
+
+    <br><br>
+    prerequisites: some high school level physics and math (algebra, geometry, trigonometry) are required to succeed in this roadmap.
+  </p>
+</div>
+
+<!-- STEP 1 -->
+<div class="step">
+  <h2>1.Physics for Electrical Engineering</h2>
+  <p>Learn the fundamental principles of physics as they apply to electrical engineering.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIfvdakbRWl0AUzMA68jJty" target="_blank">Grade 11 Electromagnetism Physics - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLOlz9q28K2e6aNgl1zt1xccyy4Ofl3YAk" target="_blank">Maxwell's Equations EXPLAINED - Parth G </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIJkQW9tNNwGSorXW2LrwvDw" target="_blank">Motors and Generators Electrodynamics Grade 12 Physics  - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLISIF5ACui17dQ5VbzxNu9QtMnfKb856n" target="_blank">Engineering Thermodynamics I Online Course - The Thermo Sage</a>
+    <a href="https://youtu.be/qGvFAl5CK_c?si=-eN-oanV6RNChZ7v" target="_blank">Static Equilibrium - Tension, Torque, Lever, Beam, & Ladder Problem - Physics - The Organic Chemistry Tutor</a>
+    <a href="https://www.youtube.com/playlist?list=PLXli3LrRvG-aAgPwRwpfGfgMuYbsAa5AD" target="_blank">Ch3 Dynamics | CAIE 9702 AS Physics -ETphysics </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIKXL5aOZJ2HfM6BBeLxV8Aa" target="_blank">Newton's Laws Grade 11 and 12 Physical Sciences (Physics) - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIK194QktKlTFm4Wc9coefi5" target="_blank">Electricity grade 10 - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIIfwHt7oPpBP6uoIjdyeZoJ" target="_blank">Grade 11 & 12 Electricity (Electric Circuits) - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvIKTiJEA7wgs9oQhRfUMIdOP" target="_blank"> Work Energy Power Grade 12 Physics - Miss Martins Maths and Science </a>
+    <a href="https://www.youtube.com/playlist?list=PLRMp_XjPkvILmFlnD0aYdj74gZACRCyxA" target="_blank">Vertical Projectile Motion Grade 12 Physics - Miss Martins Maths and Science </a>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <h2>2. Math for Electrical Engineering</h2>
+  <p>Linear algebra, differential equations, and advanced calculus.</p>
+
+  <div class="resources">   
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyHv0-40_nhO0PFrxQnPm7U9" target="_blank">Linear Algebra - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyFq1zq2WFYSKYXjf8pjewWR" target="_blank">Differential Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyGmMnpU5EBLHlfqjjEbATAN" target="_blank">Integral Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyF4mGZbAyhcYc9t6ut5aW15" target="_blank">Vector Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLC58778F28211FA19" target="_blank">Probability - Khan Academy</a>
+    <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV" target="_blank">Statistics - The Organic Chemistry Tutor</a>
+    <a href="https://www.youtube.com/playlist?list=PLpcwHaLYiaEXW5fLNOlItPH4ATorKjBuc" target="_blank">Linear Algebra Full Course - Dr. Valerie Hower</a>
+    <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgPsjfEmDorZwz0Ql5FU-aP7" target="_blank">Ordinary differential equations (in progress) - Dr. Bevin Maultsby</a>
+    <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNxJ4syh2TI-0uZM9kBmsa_" target="_blank">Second Order ODEs and the Method of Undetermined Coefficients - Dr. Bevin Maultsby</a>
+    <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgOqJCBijQxClMIuumgtMinc" target="_blank">Multivariable Calculus (Calc III) - Complete Semester Course - Dr. Bevin Maultsby</a>
+    <a href="https://www.youtube.com/playlist?list=PLBh2i93oe2qvnF0fCuYAFDUJJbZ-ybBlI" target="_blank">Complex Analysis [dark version] - The Bright Side of Mathematics </a>
+    <a href="https://www.youtube.com/playlist?list=PL5KkMZvBpo5CE__2qeqZQa5e8gSkt1Ypy" target="_blank">Complex Numbers - Eddie Woo</a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_om5O1RBi5-vDRwVTvDwyeV" target="_blank">Calculus: Derivatives - NancyPi </a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_oXcHmmyCsSI3HcyKFj8y4E" target="_blank">Calculus: Integration - NancyPi</a>
+    <a href="https://www.youtube.com/playlist?list=PLMrJAkhIeNNQromC4WswpU1krLOq5Ro6S" target="_blank">Engineering Math: Vector Calculus and Partial Differential Equations - Steve Brunton  </a>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <h2>3. Electrical Engineering Fundamentals</h2>
+  <p>Basic concepts in electrical circuits, components, and analysis.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BV9E-N8tSExU1djL6slnjbL" target = "_blank">Electronic Circuits - The Organic Chemistry Tutor </a>
+    <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRhG6s3jYIU48CqsT5cyiDTO" target="_blank">Signals and SystemsNeso Academy  </a>
+    <a href="https://www.khanacademy.org/science/electrical-engineering" target="_blank">Electrical engineering </a>
+    <a href="https://www.youtube.com/playlist?list=PLV6cmKvnKRs5geApVORPW79U6s3wpa0Ht" target="_blank">Learn Arduino with Tinkercad Circuits - Autodesk Tinkercad </a>
+    <a href="https://www.youtube.com/playlist?list=PLV6cmKvnKRs4XWUK7lCkK0A91KZw6NaQ8" target="_blank">Tinkercad Circuits - Autodesk Tinkercad </a>
+    <a href="https://www.youtube.com/playlist?list=PLWv9VM947MKi_7yJ0_FCfzTBXpQU-Qd3K" target="_blank">Electrical Engineering Basics - The Engineering Mindset </a>
+    <a href="https://www.youtube.com/playlist?list=PLdN0Ah_F4WKWJoJrGxPLwptXjmP-AoFaX" target="_blank">Power System Protection and Control - Romero Engineering Company</a>
+    <a href="https://www.youtube.com/playlist?list=PLfYdTiQCV_p6tWY5Wwjgefa7AX2YiDRQ4" target="_blank">Op-Amps (Operational Amplifiers) -CircuitBread </a>
+    <a href="https://www.youtube.com/playlist?list=PL6Vi_EcJpt8E96_JTKoOKY3HYWVGjf6b4" target="_blank">Signal Processing: An Introduction - Nathan Kutz </a>
+    <a href="https://www.youtube.com/playlist?list=PLln3BHg93SQ812ihcqWb9OOWbZ-09DLW6" target="_blank">Sensors and Actuators - RealPars </a>
+    <a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS" target="_blank">Analog Electronics - Neso Academy  </a>
+    <a href="https://www.youtube.com/playlist?list=PLDXq2_WaYJma7l8Egi02LL2nrl_osDrts" target="_blank">Electrical Safety Vlog - Electrical Power & Safety Company </a>
+    <a href="https://ocw.mit.edu/courses/res-6-008-digital-signal-processing-spring-2011/" target="_blank">Digital Signal Processing - MIT OpenCourseWare</a>
+    <a href="https://www.youtube.com/playlist?list=PLQms29D1RqeKGBEW8La2a7YuN5_4pSV4k" target="_blank">AElectronics I: Semiconductor Physics and Devices - Jordan Edmunds Chetty  </a>
+    <a href="https://www.youtube.com/playlist?list=PLHVTDGAdR09OD5TpLYJPF8jGkgxnqveYy" target="_blank">EEE 107 Introduction to Communication Systems - Charleston Dale Ambatali</a>
+</div>
+</div>
+
+<!-- STEP 4 -->
+<div class="step">
+  <h2>4. Programming and Software for Electrical Engineers</h2>
+  <p>Explore programming concepts and applications in electrical engineering.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PL43pGnjiVwgQHLPnuH9ch-LhZdwckM8Tq" target="_blank">C++ for beginners - CodeBeauty  </a>
+    <a href="https://www.youtube.com/playlist?list=PL43pGnjiVwgTJg7uz8KUGdXRdGKE0W_jN" target="_blank">C++ Object-Oriented Programming - CodeBeauty </a>
+    <a href="https://www.youtube.com/playlist?list=PL43pGnjiVwgR9BloyT0OgsMo8d_hylBv0" target="_blank">C++ STL - CodeBeauty </a>
+    <a href="https://www.youtube.com/playlist?list=PL43pGnjiVwgS5njI0HMGnqSH18tSSuLz_" target="_blank">Data Structures - CodeBeauty  </a>
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYTI2GUM66gNqt690svYsdsD" target="_blank">Learn Python Programming Step by Step - Python Simplified </a>
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYRCbHe3sG5viisehpADOWUv" target="_blank">Object Oriented Programming - Python Simplified</a>
+    <a href="https://www.youtube.com/playlist?list=PL8HmoRTjTSlEgS2GsFaDr9zDLC1xD9FZf" target="_blank">Learn Python for Beginners - Visually Explained</a>
+    <a href="https://www.skills.google/paths/2472/course_templates/1348" target="_blank">Crash Course on Python - Google Skills</a>
+    <a href="https://www.youtube.com/playlist?list=PL1t3VyAOJRenMvr_VWhgDZOKlEhArHzqh" target = "_blank">Microgrid in Matlab Simulink - PZ Engineering</a>
+  </div>
+</div>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+
+function updateButton() {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  themeToggle.textContent = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+
+}
+
+/* set initial button text */
+
+updateButton();
+
+/* toggle */
+
+themeToggle.addEventListener("click", () => {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  if (isDark) {
+
+    document.documentElement.removeAttribute("data-theme");
+
+    localStorage.setItem("theme", "light");
+
+  } else {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    localStorage.setItem("theme", "dark");
+
+  }
+
+  updateButton();
+
+});
+
+</script>
+
+</body>
+</html>

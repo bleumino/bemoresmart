@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>French Roadmap (European French)</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#2563eb;
+  --button-bg:#ffffff;
+  --button-hover:#f3f4f6;
+}
+
+/* DARK MODE */
+[data-theme="dark"]{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --border:#1f2937;
+  --accent:#60a5fa;
+  --button-bg:#111827;
+  --button-hover:#1f2937;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Page layout */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header{
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.header h1{
+  font-size: 2.5rem;
+}
+
+.header p{
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Roadmap steps */
+.step{
+  max-width: 900px;
+  margin: 20px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.step:hover{
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.step h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.step p{
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Resources */
+.resources{
+  margin-top: 12px;
+}
+
+.resources a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--button-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.resources a:hover{
+  background: var(--button-hover);
+}
+
+/* Top buttons */
+.top-bar{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--button-hover);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <button id="themeToggle">🌙 Dark mode</button>
+  <button onclick="window.location.href='index.html'">Home</button>
+   <button onclick="window.location.href='roadmap.html'">Roadmap</button>
+</div>
+
+<div class="header">
+  <h1>French Roadmap</h1>
+  <p>
+    A structured path from zero → advanced French proficiency.
+    Follow step by step or jump around.
+
+    <br><br>
+    prerequisites: none.
+  </p>
+</div>
+
+<!-- STEP 1 -->
+<div class="step">
+  <h2>1. French Basics (A1 -A2)</h2>
+  <p>Learn basic vocabulary, grammar, and pronunciation.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLnazreCxpqRlvlt5Pf4qn4bUoua5nU2Im" target="_blank">French For Beginners (A1) - Easy French</a>
+    <a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIWp3-BZH02lKpfG4y4akwPg" target="_blank">Learn French vocabulary for each letter of the alphabet - The perfect French with Dylane</a>
+    <a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIXfpr4LGmL_yAHXDjIujCMZ" target="_blank">French Short Stories - A1 & A2 - The perfect French with Dylane</a>
+    <a href="https://www.youtube.com/playlist?list=PLnUoJbvxjRgjAFhKzNfbx6z4hS1Bb4sLo" target="_blank">LEARN FRENCH IN 3 MINUTES - French mornings with Elisa</a>
+    <a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpWjqV1PpXLUC-ZZkEUcXK7q" target = "_blank">A1 Complete Beginners - Learn To French</a>
+    <a href="https://www.youtube.com/playlist?list=PLnazreCxpqRmpb4lGvzvCGXIXZkL3Nc27" target="_blank">French For Intermediate Beginners (A2-B1) - Easy French</a>
+    <a href="https://www.youtube.com/playlist?list=PL4LJFH4rj1wRdod6KSWhUDN8nZNC6bpfl" target="_blank"> Beginner Dreaming French - Dreaming French </a>
+    <a href="https://www.frenchmornings.com/course/objectif-francais-a2" target="_blank">Online A2 French course - Dreaming French - French mornings with Elisa</a>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <h2>2. French Intermediate (B1 - B2)</h2>
+  <p>Master verb conjugations, sentence structure, and everyday conversations.</p>
+
+  <div class="resources">   
+    <a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIUunH9-dFoRA3S5PVet28pt" target="_blank">French Conjugation Course -The perfect French with Dylane</a>
+    <a href="https://www.youtube.com/playlist?list=PL_bt5rj27IIUGgY2ZIe199_APdgOU6I7f" target="_blank">The Complete French - Grammar Course • A1 to B2 - The perfect French with Dylane</a>
+    <a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpUxXVIpc4jU1EQknZAkCrhJ" target="_blank">DELF B1 Practice - Learn To French</a>
+    <a href="https://www.youtube.com/playlist?list=PL_Ddcj9mdkpXGsDV4W1eRC4cFMAmsi813" target="_blank">French Conjugation - Learn To French</a>
+    <a href="https://www.youtube.com/playlist?list=PLnazreCxpqRkOoB4MhjCtN0R_6IhLgQfp" target="_blank">French For Intermediate Learners (B1) - Easy French</a>
+    <a href="https://www.youtube.com/playlist?list=PLnazreCxpqRlBNcfZuQkxYFKJ-VRuzrzV" target="_blank">Videos in Slow French - Easy French</a>
+    <a href="https://www.youtube.com/playlist?list=PL0HcpcjPEgyMfhkIY-iAmUB2mBDyCYXbK" target="_blank">Intermediate French Podcasts (B1-B2) - Académie Amélie - Learn French easily!</a>
+    <a href="https://www.youtube.com/playlist?list=PL4LJFH4rj1wSdOvq9Zo7TysqZXmbTSLpc" target="_blank">Intermediate Dreaming French - Dreaming French</a>
+    <a href="https://www.frenchmornings.com/course/objectif-francais-b1" target="_blank">Online B1 French course - Dreaming French - French mornings with Elisa</a>
+    <a href="https://www.frenchmornings.com/course/objectif-francais-b2" target="_blank">Online B2 French course - Dreaming French - French mornings with Elisa</a>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <h2>3. French Advanced (C1 - C2)</h2>
+  <p>Develop fluency in complex topics, literature, and professional communication.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLnazreCxpqRncZ__JlexKjoZvIhpLwU3i" target = "_blank">French For Advanced Learners (B2-C1) - Easy French</a>
+    <a href="https://www.youtube.com/playlist?list=PLaxXFztaipzn1LYFGWO6z35m8Q15xkNVe" target="_blank">Grammaire niveau avancé (B2 - C1) - Français avec Nelly</a>
+    <a href="https://www.youtube.com/playlist?list=PLfDmeEHel1x1DrAnjI8mSoWbTQYQvXZ_C" target="_blank">FRENCH IDIOMS - lingoni FRENCH </a>
+  </div>
+</div>
+
+
+
+<!-- STEP 4 -->
+<div class="step">
+  <h2>4. French Pronunciation and Conversation (slang and pronunciations)</h2>
+  <p>Improve your pronunciation, intonation, and conversational skills.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLnUoJbvxjRghSi5GBz-rbdgEHBLLbYz3F" target="_blank">FRENCH SLANG 101 - French mornings with Elisa</a>
+    <a href="https://www.youtube.com/playlist?list=PLnUoJbvxjRgjAX0RPFwlB68tvHksbA5hE" target="_blank">PRONONCIATION - French mornings with Elisa </a>
+    <a href="https://www.youtube.com/playlist?list=PLmI6t9l1npeL74KSJNuA1D32tSFea3c71" target="_blank">French Pronunciation Lessons (Legacy) - Nastya Titova  </a>
+    <a href="https://www.youtube.com/playlist?list=PL8l6rgYODqM_-9PNygObLJawiGylMWcpw" target="_blank">La prononciation, c'est facile ! - Oh My French Class </a>
+    <a href="https://www.frenchmornings.com/course/flawless-pronunciation" target="_blank">Master French Pronunciation - Dreaming French - French mornings with Elisa</a>
+  </div>
+</div>
+
+<!-- STEP 5 -->
+<div class="step">
+  <h2>5. French Culture and Communication</h2>
+  <p>Explore French culture, literature, and advanced communication skills.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PL8l6rgYODqM8HlgRacq6nOh6-oQCCNgkE" target="_blank">Culture Shock! Les traditions françaises - Oh My French Class</a>
+    <a href="https://www.youtube.com/playlist?list=PLmK-vbXTxuypeIF5rXp_MlI9SkXcNQacV" target="_blank">FRENCH CULTURE & SOCIETY - Piece of French</a>
+    <a href="https://www.youtube.com/playlist?list=PLJbjPbdqPjM4t7iU521ZbwfoJFIW2h049" target="_blank">The French way of balance - Lucie Villeneuve </a>
+    <a href="https://open.spotify.com/show/2Mu5dTlsG1vRE25twu1P2l" target="_blank">Duoling French Podcast </a>
+  </div>
+</div>
+
+  <!-- STEP 6 -->
+<div class="step">
+  <h2>6. Extra Academic / Structured Courses</h2>
+  <p>University-style French learning resources and structured free courses.</p>
+
+  <div class="resources">
+    <a href="https://www.open.edu/openlearn/education-development/university-ready/free-online-french-courses" target="_blank"> Free online French courses - The Open University UK </a>
+  </div>
+</div>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+
+function updateButton() {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  themeToggle.textContent = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+
+}
+
+/* set initial button text */
+
+updateButton();
+
+/* toggle */
+
+themeToggle.addEventListener("click", () => {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  if (isDark) {
+
+    document.documentElement.removeAttribute("data-theme");
+
+    localStorage.setItem("theme", "light");
+
+  } else {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    localStorage.setItem("theme", "dark");
+
+  }
+
+  updateButton();
+
+});
+
+</script>
+
+</body>
+</html>

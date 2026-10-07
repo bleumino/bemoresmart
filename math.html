@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Math Roadmap </title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#2563eb;
+  --button-bg:#ffffff;
+  --button-hover:#f3f4f6;
+}
+
+/* DARK MODE */
+[data-theme="dark"]{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --border:#1f2937;
+  --accent:#60a5fa;
+  --button-bg:#111827;
+  --button-hover:#1f2937;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Page layout */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header{
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.header h1{
+  font-size: 2.5rem;
+}
+
+.header p{
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Roadmap steps */
+.step{
+  max-width: 900px;
+  margin: 20px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.step:hover{
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.step h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.step p{
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Resources */
+.resources{
+  margin-top: 12px;
+}
+
+.resources a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--button-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.resources a:hover{
+  background: var(--button-hover);
+}
+
+/* Top buttons */
+.top-bar{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--button-hover);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <button id="themeToggle">🌙 Dark mode</button>
+  <button onclick="window.location.href='index.html'">Home</button>
+   <button onclick="window.location.href='roadmap.html'">Roadmap</button>
+</div>
+
+<div class="header">
+  <h1>Math Roadmap</h1>
+  <p>
+    A structured path from zero → advanced mathematical proficiency.
+    Follow step by step or jump around.
+
+    <br><br>
+    prerequisites: none.
+  </p>
+</div>
+
+<!-- STEP 1 -->
+<div class="step">
+  <h2>1. Math Fundamentals</h2>
+  <p>Learn basic concepts, principles, and problem-solving techniques.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BNPtc0yZy1MORWIoZbhFvcK" target="_blank">Algebra 2 - Krista King </a>
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BP9hyAHCfjloy8RC7vsULiv" target = "_blank">Algebra 1 - Krista King</a>
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BOLjlVKHcFyVh-K5PreRqY7" target = "_blank">precalculus - Krista King</a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_r80Qkas6hNodS_AKPM0VFM" target="_blank">Precalculus - NancyPi</a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_qxxxl6aZk7n7iUfw6l4hcu" target = "_blank"> Trigonometry - NancyPi </a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_ombL759gjn2y2UTGBueB2E" target = "_blank">Factoring - NancyPi </a>
+    
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <h2>2. Calculus 1</h2>
+  <p>Master the fundamentals of differential and integral calculus.</p>
+
+  <div class="resources">   
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyFq1zq2WFYSKYXjf8pjewWR" target="_blank">Differential Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyGmMnpU5EBLHlfqjjEbATAN" target="_blank">Integral Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BOYyyC-Gunxrh-jYnSfsQy0" target="_blank">Calculus I -Krista King </a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_om5O1RBi5-vDRwVTvDwyeV" target="_blank">Calculus: Derivatives - NancyPi </a>
+    <a href="https://www.youtube.com/playlist?list=PL3j1ntBPCU_oXcHmmyCsSI3HcyKFj8y4E" target="_blank">Calculus: Integration - NancyPi </a>
+
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <h2>3. Calculus 2</h2>
+  <p>Deepen your understanding of calculus with advanced topics and applications.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BMObozItpbiZ8f2pjf3qS9M" target = "_blank">Calculus II - Krista King </a>
+    <a href="https://www.youtube.com/playlist?list=PLpcwHaLYiaEWLlLEdH2gpK2J7gTAXzB5N" target="_blank">Calculus II Full Lectures - Dr. Valerie Hower</a>
+    <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgPasvgpQZ2ustikfBCbavYd" target="_blank">Single Variable Calculus II - Complete Semester Course - Dr. Bevin Maultsby  </a>
+  </div>
+</div>
+
+
+
+<!-- STEP 4 -->
+<div class="step">
+  <h2>4. Linear Algebra</h2>
+  <p>Master the concepts of linear algebra with practical applications and problem-solving techniques.</p>
+    <div class="resources">
+        <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyHv0-40_nhO0PFrxQnPm7U9" target="_blank">Linear Algebra - Math with Dr. Claire</a>
+        <a href="https://www.youtube.com/playlist?list=PLpcwHaLYiaEXW5fLNOlItPH4ATorKjBuc" target="_blank">Linear Algebra Full Course - Dr. Valerie Hower</a>
+    </div>
+</div>
+
+<!-- STEP 5 -->
+<div class="step">
+  <h2>5. Calculus III</h2>
+  <p>Explore advanced calculus concepts and their applications.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BMdeuQfJDVRJ5DPMduSzVow" target="_blank">Calculus III - Krista King </a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyF4mGZbAyhcYc9t6ut5aW15" target="_blank">Vector Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgOqJCBijQxClMIuumgtMinc" target="_blank">Multivariable Calculus (Calc III) - Complete Semester Course - Dr. Bevin Maultsby</a>
+  </div>
+</div>
+
+<!-- STEP 6 -->
+<div class="step">
+  <h2>6. Proofs and Discrete Mathematics</h2>
+  <p>Dive into the world of probability and statistics with comprehensive tutorials and examples.</p>
+    <div class="resources">
+        <a href="https://www.youtube.com/watch?v=ce4Jc0QmjOI" target="_blank">An Introduction to Mathematical Proofs - Ellie Sleightholm</a>
+        <a href="https://www.youtube.com/playlist?list=PLl-gb0E4MII28GykmtuBXNUNoej-vY5Rz" target="_blank">Discrete Math I (Entire Course) - Kimberly Brehm</a>
+    </div>
+</div>  
+
+<!-- STEP 7 -->
+<div class="step">
+  <h2>7. Differential Equations and Real Analysis</h2>
+  <p>Master the concepts of linear algebra with practical applications and problem-solving techniques.</p>
+    <div class="resources">
+         <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgPsjfEmDorZwz0Ql5FU-aP7" target="_blank">Ordinary Differential Equations - Dr. Bevin Maultsby</a>
+        <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNxJ4syh2TI-0uZM9kBmsa_" target="_blank">Second Order ODEs - Dr. Bevin Maultsby</a>
+        <a href="https://www.youtube.com/playlist?list=PLJ8OrXpbC-BO2zEW58TpHHakh5nodn3-i" target="_blank">Differential Equations - Krista King</a>
+        <a href="https://www.youtube.com/playlist?list=PL22w63XsKjqxqaF-Q7MSyeSG1W1_xaQoS" target="_blank">Real Analysis - Michael Penn </a>
+        <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNKTl0bgy6BMQXAShRZor5l" target="_blank">Real Analysis II - Dr. Bevin Maultsby</a>
+        <a href="https://www.youtube.com/playlist?list=PLBEl4BT8wUgNEBt3HzROxHeVdadpK2g5H" target="_blank">Metric Spaces, Sets, and Topology</a>
+    </div>
+</div>
+
+<!-- STEP 8 -->
+<div class="step">
+  <h2>8. Probability and Statistics</h2>
+  <p>Dive into probability, statistical reasoning, and data analysis.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLC58778F28211FA19" target="_blank">Probability - Khan Academy</a>
+    <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV" target="_blank">Statistics - The Organic Chemistry Tutor</a>
+  </div>
+</div>
+
+<!-- STEP 9 -->
+<div class="step">
+    <h2>9. Machine Learning</h2>
+    <p>Learn machine learning algorithms, techniques, and applications through a mathematical lens.</p>
+    <div class="resources">
+         <a href="https://www.youtube.com/playlist?list=PLD80i8An1OEGZ2tYimemzwC3xqkU0jKUg" target="_blank">Math for Machine Learning - Weights & Biases</a>
+         <a href="https://www.youtube.com/playlist?list=PLcwJ7lE9nSHNy5cAZvIHFstwM37ztUXXB" target="_blank">Mathematical Foundations of Machine Learning at UChicago - Rebecca Willett</a>
+         <a href="https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd" target="_blank">Machine Learning From Scratch - AssemblyAI </a>
+         <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL" target="_blank">Stanford CS224R Deep Reinforcement Learning - Stanford Online</a>
+         <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16" target="_blank">Stanford CS231N Deep Learning for Computer Vision I 2025 - Stanford Online </a>
+    </div>
+</div>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+
+function updateButton() {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  themeToggle.textContent = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+
+}
+
+/* set initial button text */
+
+updateButton();
+
+/* toggle */
+
+themeToggle.addEventListener("click", () => {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  if (isDark) {
+
+    document.documentElement.removeAttribute("data-theme");
+
+    localStorage.setItem("theme", "light");
+
+  } else {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    localStorage.setItem("theme", "dark");
+
+  }
+
+  updateButton();
+
+});
+
+</script>
+
+</body>
+</html>

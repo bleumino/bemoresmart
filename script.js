@@ -464,3 +464,8 @@ document.getElementById("learningFramework").addEventListener("click", () => {
 });
 
 
+document.getElementById("roadmap").addEventListener("click", () => {
+
+  window.location.href = "roadmap.html";
+
+});

@@ -42,7 +42,9 @@
   <button id="learningFramework" type="button" aria-label="Go to Learning Framework page">
   Learning Framework
 </button>
-  </div>
+<button id="roadmap" type="button" aria-label="Go to Roadmap page">
+  Roadmaps
+</button>
 </header>
   <section class="intro">
     <p><strong>bemoresmart</strong> is a curated encyclopaedia of high‑quality learning resources across technology, languages, science, and culture. 
@@ -1029,5 +1031,57 @@
     &copy; 2026 BeMoreSmart. All rights reserved.
   </div>
 </footer>
+
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+
+  // Load saved theme
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    if (themeToggle) {
+
+      themeToggle.textContent = "☀️ Light mode";
+
+    }
+
+  }
+
+  // Toggle theme
+
+  if (themeToggle) {
+
+    themeToggle.addEventListener("click", () => {
+
+      const currentTheme =
+
+        document.documentElement.getAttribute("data-theme");
+
+      if (currentTheme === "dark") {
+
+        document.documentElement.removeAttribute("data-theme");
+
+        localStorage.setItem("theme", "light");
+
+        themeToggle.textContent = "🌙 Dark mode";
+
+      } else {
+
+        document.documentElement.setAttribute("data-theme", "dark");
+
+        localStorage.setItem("theme", "dark");
+
+        themeToggle.textContent = "☀️ Light mode";
+
+      }
+
+    });
+
+  }
+  </script>
 </body>
 </html>

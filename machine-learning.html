@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Machine Learning Roadmap</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+:root{
+  --bg:#f5f7fb;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --accent:#2563eb;
+  --button-bg:#ffffff;
+  --button-hover:#f3f4f6;
+}
+
+/* DARK MODE */
+[data-theme="dark"]{
+  --bg:#0f172a;
+  --card:#111827;
+  --text:#f3f4f6;
+  --muted:#9ca3af;
+  --border:#1f2937;
+  --accent:#60a5fa;
+  --button-bg:#111827;
+  --button-hover:#1f2937;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* Page layout */
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+/* Header */
+.header{
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.header h1{
+  font-size: 2.5rem;
+}
+
+.header p{
+  color: var(--muted);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Roadmap steps */
+.step{
+  max-width: 900px;
+  margin: 20px auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.step:hover{
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.step h2{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.step p{
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Resources */
+.resources{
+  margin-top: 12px;
+}
+
+.resources a{
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: var(--button-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.resources a:hover{
+  background: var(--button-hover);
+}
+
+/* Top buttons */
+.top-bar{
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--button-bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+button:hover{
+  background: var(--button-hover);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <button id="themeToggle">🌙 Dark mode</button>
+  <button onclick="window.location.href='index.html'">Home</button>
+   <button onclick="window.location.href='roadmap.html'">Roadmap</button>
+</div>
+
+<div class="header">
+  <h1>Machine Learning Roadmap</h1>
+  <p>
+    A structured path from zero → advanced ML engineering.
+    Follow step by step or jump around.
+
+    <br><br>
+    prerequisites: some high school level math (algebra, geometry, trigonometry) are required to succeed in this roadmap.
+  </p>
+</div>
+
+<!-- STEP 1 -->
+<div class="step">
+  <h2>1. Python Basics</h2>
+  <p>Learn syntax, loops, functions, and basic programming logic.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYTI2GUM66gNqt690svYsdsD" target="_blank">Learn Python Programming Step by Step - Python Simplified </a>
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYRCbHe3sG5viisehpADOWUv" target="_blank">Object Oriented Programming - Python Simplified</a>
+    <a href="https://www.youtube.com/playlist?list=PL8HmoRTjTSlEgS2GsFaDr9zDLC1xD9FZf" target="_blank">Learn Python for Beginners - Visually Explained</a>
+    <a href="https://www.skills.google/paths/2472/course_templates/1348" target="_blank">Crash Course on Python - Google Skills</a>
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYTC04DA9J8hta6oYEKOd91N" target = "_blank">Data Science Simplified - Python Simplified</a>
+    <a href="https://www.youtube.com/playlist?list=PLI1dq6Zw28xchHu0MgHTEGPWR5r9GXw4V" target="_blank">Python Leetcode Easy Questions | Algorithms and Data Structures - Persistent Programmer </a>
+  </div>
+</div>
+
+<!-- STEP 2 -->
+<div class="step">
+  <h2>2. Math for ML</h2>
+  <p>Linear algebra, probability, and basic calculus.</p>
+
+  <div class="resources">   
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyHv0-40_nhO0PFrxQnPm7U9" target="_blank">Linear Algebra - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyFq1zq2WFYSKYXjf8pjewWR" target="_blank">Differential Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyGmMnpU5EBLHlfqjjEbATAN" target="_blank">Integral Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLVTG-sq2TyyF4mGZbAyhcYc9t6ut5aW15" target="_blank">Vector Calculus - Math with Dr. Claire</a>
+    <a href="https://www.youtube.com/playlist?list=PLC58778F28211FA19" target="_blank">Probability - Khan Academy</a>
+    <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BVsziIRdfv4Hl4UIqDZhXWV" target="_blank">Statistics - The Organic Chemistry Tutor</a>
+    <a href="https://www.youtube.com/playlist?list=PLpcwHaLYiaEXW5fLNOlItPH4ATorKjBuc" target="_blank">Linear Algebra Full Course - Dr. Valerie Hower</a>
+  </div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step">
+  <h2>3. Data Handling</h2>
+  <p>Pandas, NumPy, and data cleaning workflows.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLqXS1b2lRpYTC04DA9J8hta6oYEKOd91N" target = "_blank">Data Science Simplified - Python Simplified</a>
+    <a href="https://leetcode.com/problemset/pandas/" target="_blank">pandas practice problems - leetcode</a>
+    <a href="https://www.youtube.com/playlist?list=PLZPZq0r_RZONoiL6kRbNM9nPiUM0eErWG" target="_blank">Pandas tutorial for beginners 🐼 - Bro Code</a>
+    <a href="https://www.youtube.com/playlist?list=PLZPZq0r_RZOMldEsyG8-3BebUNbTFVfmY" target="_blank">NumPy tutorial for beginners 🔢 - Bro Code</a>
+    <a href="https://www.youtube.com/playlist?list=PLTZYG7bZ1u6qItcFn1J5TateQQUqUe_Z5" target="_blank"> Prepare Data for Exploration | Google Data Analytics Certificate - Google Career Certificates </a>
+  </div>
+</div>
+
+<!-- STEP 4 -->
+<div class="step">
+  <h2>4. Machine Learning Fundamentals</h2>
+  <p>Regression, classification, and model evaluation.</p>
+
+  <div class="resources">
+    <a href="https://www.youtube.com/playlist?list=PLcwJ7lE9nSHNy5cAZvIHFstwM37ztUXXB" target="_blank">Mathematical Foundations of Machine Learning at UChicago - Rebecca Willett</a>
+    <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16" target="_blank">Stanford CS231N Deep Learning for Computer Vision I 2025 - Stanford Online </a>
+    <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL" target="_blank">Stanford CS224R Deep Reinforcement Learning - Stanford Online</a>
+    <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xoWNVdDudn51XM8lOuZ_Njv" target="_blank">Reinforcement Learning - Developing Intelligent Agents - deeplizard</a>
+    <a href="https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" target="_blank">MIT 6.S191: Introduction to Deep Learning - Alexander Amini</a>
+    <a href="https://www.youtube.com/playlist?list=PLcWfeUsAys2k_xub3mHks85sBHZvg24Jd" target="_blank">Machine Learning From Scratch - AssemblyAI </a>
+    <a href="https://www.youtube.com/playlist?list=PLcWfeUsAys2nPgh-gYRlexc6xvscdvHqX" target="_blank">Deep Learning Explained - AssemblyAI </a>
+    <a href="https://pyimagesearch.com/free-opencv-computer-vision-deep-learning-crash-course/" target="_blank">Free OpenCv course</a>
+    <a href="https://developers.google.com/machine-learning" target="_blank">ML Crash Course - Google Developers</a>
+    <a href="https://www.youtube.com/playlist?list=PLWcLPdrF6kOnovZnG7VT86ffqdpOUcIUV" target="_blank">Get Started with ML-Agents in Unity - by Ludic Worlds</a>
+    <a href="https://www.youtube.com/watch?v=bmmQA8A-yUA&t=9231s" target="_blank">Machine Learning in 2024 – Beginner's Course</a>
+    <a href="https://www.youtube.com/playlist?list=PLgNJO2hghbmjlE6cuKMws2ejC54BTAaWV" target="_blank">Reinforcement Learning with Python - Nicholas Renotte </a>
+    <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xrwRnXk_yCPtnqqo4_u2YGL" target="_blank">TensorFlow - Python Deep Learning Neural Network API - deeplizard </a>
+    <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xqF1c6ZeTTKkJb2wbXmLJcU" target="_blank">NLP Intro For Text - Sentiment Analysis With Deep Learning - deeplizard </a>
+    <a href="https://www.youtube.com/playlist?list=PLZbbT5o_s2xr3HR25iNtdl1HM8gFq9fIB" target="_blank">Al Art for Beginners - Stable Diffusion Crash Course- deeplizard </a>
+    <a href="https://www.youtube.com/playlist?list=PLn8PRpmsu08r4JYrvGajKMH_QLRQK6RxX" target="_blank">AI with MATLAB and Simulink - MATLAB </a>
+  </div>
+</div>
+<!-- STEP 5 -->
+<div class="step">
+  <h2>5. Software development</h2>
+  <p>Docker, cloud and other development tools.</p>
+  
+  <div class="resources">
+    <a href="https://www.youtube.com/watch?v=pg19Z8LL06w&t=174s" target="_blank">Docker Crash Course for Absolute Beginners [NEW] - TechWorld with Nana</a>
+    <a href="https://www.youtube.com/playlist?list=PLy7NrYWoggjzmPAyfDQgthSgx6VEVlS0-" target="_blank">Infrastructure as Code (IaC) Tutorials - TechWorld with Nana </a>
+    <a href="https://www.youtube.com/playlist?list=PLTZYG7bZ1u6qck0rYNHO2Yfjzq5ZRRTCe" target="_blank">Introduction to Git and GitHub | Google IT Automation with Python Certificate - Google Career Certificates  </a>
+    <a href="https://www.youtube.com/playlist?list=PL_MIDuPM12MOcQQjnLDtWCCCuf1Cv-nWL" target="_blank">MLOps with Databricks: Free Edition - Marvelous MLOps </a>
+  </div>
+
+<script>
+const themeToggle = document.getElementById("themeToggle");
+
+function updateButton() {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  themeToggle.textContent = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+
+}
+
+/* set initial button text */
+
+updateButton();
+
+/* toggle */
+
+themeToggle.addEventListener("click", () => {
+
+  const isDark = document.documentElement.getAttribute("data-theme");
+
+  if (isDark) {
+
+    document.documentElement.removeAttribute("data-theme");
+
+    localStorage.setItem("theme", "light");
+
+  } else {
+
+    document.documentElement.setAttribute("data-theme", "dark");
+
+    localStorage.setItem("theme", "dark");
+
+  }
+
+  updateButton();
+
+});
+
+</script>
+
+</body>
+</html>

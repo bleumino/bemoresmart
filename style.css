@@ -311,7 +311,7 @@ footer a:hover {
 #themeToggle,
 #randomArticle,
 #learningFramework,
-#openGraph {
+#roadmap{
   position: fixed;
   top: 18px;
   z-index: 999;
@@ -342,10 +342,13 @@ footer a:hover {
 #learningFramework{
   left: 300px;
 }
-
+#roadmap{
+  left: 480px;
+}
 #themeToggle:hover,
 #randomArticle:hover,
-#learningFramework:hover
+#learningFramework:hover,
+#roadmap:hover
  {
   background: var(--badge-bg);
   border-color: var(--badge-border);
